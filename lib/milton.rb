@@ -37,10 +37,22 @@ class Milton
     data        = $1.gsub(/"/, '')
     department  = data.split(',')[14].to_i
     employee_id = data.split(',')[15].to_i
-    @page.form('Form1') do |form|
+    row = ['0','','False','True','False','False','False',
+      '02/26/2009 12:00:00 AM',
+      '02/26/2009 08:30 AM','',
+      '04:30 PM',
+      '8','',
+      department.to_s,
+      employee_id.to_s,
+      '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
+    
+    @page = @page.form('Form1') { |form|
       ## FIXME: Fill out this form
-      # form['hdnRETURNDATA']
-    end
+      form['hdnRETURNDATA'] = row.map { |x| CGI.escape(x) }.join('~~')
+      form['__EVENTTARGET'] = 'TG:btnSubmitTop'
+      form['__PageDirty']   = 'True'
+    }.submit
+    @page.save('bar.html')
   end
 end
 
