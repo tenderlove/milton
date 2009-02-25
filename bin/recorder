@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby -w
+
+require 'webrick'
+require 'webrick/httpproxy'
+require 'logger'
+
+last_request_time = Time.now
+human_requests = Logger.new('requests.log')
+
+s = WEBrick::HTTPProxyServer.new(
+  :Logger               => nil,
+  :Port                 => 8080,
+  :ProxyContentHandler  => lambda { |req,res|
+    # If the last request time is ten seconds ago, let's say that a human
+    # made it
+    if Time.now - last_request_time >= 10
+      human_requests.debug("#{req}")
+    end
+    last_request_time = Time.now
+  }
+)
+
+Signal.trap('INT') do
+  s.shutdown
+end
+
+s.start
