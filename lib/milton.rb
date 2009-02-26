@@ -43,13 +43,11 @@ class Milton
   end
 
   def rows_per_day= rows = 1
-    @page.save('foo.html')
     @page = @page.form('Form1') { |form|
       form['__EVENTTARGET'] = 'SETNOOFROWS'
       form['__EVENTARGUMENT'] = rows.to_s
       form['__PageDirty']   = 'False'
     }.submit
-    @page.save('bar.html')
   end
 
   def fill_timesheet
