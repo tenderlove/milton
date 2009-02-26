@@ -44,21 +44,20 @@ class Milton
 
   def fill_timesheet
     rows = []
-    @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).each do |match|
-      next unless match[0] =~ /^\[0,/
-      data        = match[0].gsub(/"/, '').split(',')
+    parse_timesheet.each do |data|
+      next if data[0].to_i > 0
 
-      department  = data[14].to_i
-      employee_id = data[15].to_i
-      date        = Date.parse(CGI.unescape(data[7])).strftime('%m/%d/%Y')
+      department  = data[6]
+      employee_id = data[7]
+      date        = Date.parse(CGI.unescape(data[1])).strftime('%m/%d/%Y')
 
       rows << ['0','','False','True','False','False','False',
       "#{date} 12:00:00 AM",
       "#{date} 08:30 AM",'',
       '04:30 PM',
       '8','',
-      department.to_s,
-      employee_id.to_s,
+      department,
+      employee_id,
       '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
 
     end
@@ -85,7 +84,7 @@ class Milton
     @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).map do |match|
       match[0].gsub(/"/, '').split(',').map { |x|
         CGI.unescape(x.strip).delete('[]')
-      }.values_at(0, 7, 8, 9, 11, 12)
+      }.values_at(0, 7, 8, 9, 11, 12, 14, 15)
     end
   end
 end
