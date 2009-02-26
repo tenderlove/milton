@@ -28,27 +28,51 @@ class Milton
       form['txtUserID']     = username
       form['txtPassword']   = password
       form['__EVENTTARGET'] = 'btnLogin'
+    }.submit.link_with(:text => 'Time Sheet').click
+  end
+
+  def current_week
+    today = Date.today
+    monday = today - today.wday + 1
+    friday = monday + 4
+    @page = @page.form('Form1') { |form|
+      form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
+      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
+      form['ctrlDtRangeSelector:BeginDate']     = monday.strftime('%m/%d/%Y')
+      form['ctrlDtRangeSelector:EndDate']       = friday.strftime('%m/%d/%Y')
+      form['__PageDirty']   = 'False'
     }.submit
   end
 
   def timesheet_for
-    @page = @page.link_with(:text => 'Time Sheet').click
-    @page.body =~ /TCMS.oTD.push\((\[.*\])\)/
-    data        = $1.gsub(/"/, '')
-    department  = data.split(',')[14].to_i
-    employee_id = data.split(',')[15].to_i
-    row = ['0','','False','True','False','False','False',
-      '02/26/2009 12:00:00 AM',
-      '02/26/2009 08:30 AM','',
+    rows = []
+    @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).each do |match|
+      next unless match[0] =~ /^\[0,/
+      data        = match[0].gsub(/"/, '').split(',')
+
+      department  = data[14].to_i
+      employee_id = data[15].to_i
+      date        = Date.parse(CGI.unescape(data[7])).strftime('%m/%d/%Y')
+
+      rows << ['0','','False','True','False','False','False',
+      "#{date} 12:00:00 AM",
+      "#{date} 08:30 AM",'',
       '04:30 PM',
       '8','',
       department.to_s,
       employee_id.to_s,
       '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
+
+    end
     
     @page = @page.form('Form1') { |form|
       ## FIXME: Fill out this form
-      form['hdnRETURNDATA'] = row.map { |x| CGI.escape(x) }.join('~~')
+      form['hdnRETURNDATA'] = rows.map { |row|
+        row.map { |value|
+          CGI.escape(value)
+        }.join('~~')
+      }.join('~||~')
+
       form['__EVENTTARGET'] = 'TG:btnSubmitTop'
       form['__PageDirty']   = 'True'
     }.submit
@@ -61,6 +85,7 @@ if __FILE__ == $0
   Milton.new do |client|
     client.client_name = config['client_name']
     client.login config['username'], config['password']
+    client.current_week
     client.timesheet_for
   end
 end
