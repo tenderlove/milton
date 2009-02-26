@@ -5,9 +5,7 @@ class Milton
   VERSION = '1.0.0'
 
   def initialize &block
-    @agent = WWW::Mechanize.new { |a|
-      a.log = Logger.new('out.log')
-    }
+    @agent = WWW::Mechanize.new
     @page = nil
     yield self if block_given?
   end
@@ -31,7 +29,7 @@ class Milton
     }.submit.link_with(:text => 'Time Sheet').click
   end
 
-  def current_week
+  def select_current_week
     today = Date.today
     monday = today - today.wday + 1
     friday = monday + 4
@@ -44,7 +42,7 @@ class Milton
     }.submit
   end
 
-  def timesheet_for
+  def fill_timesheet
     rows = []
     @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).each do |match|
       next unless match[0] =~ /^\[0,/
@@ -85,7 +83,7 @@ if __FILE__ == $0
   Milton.new do |client|
     client.client_name = config['client_name']
     client.login config['username'], config['password']
-    client.current_week
-    client.timesheet_for
+    client.select_current_week
+    client.fill_timesheet
   end
 end
