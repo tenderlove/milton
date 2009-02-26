@@ -74,7 +74,19 @@ class Milton
       form['__EVENTTARGET'] = 'TG:btnSubmitTop'
       form['__PageDirty']   = 'True'
     }.submit
-    @page.save('bar.html')
+  end
+
+  def extract_timesheet
+    puts parse_timesheet.map { |x| x.join(', ') }.join("\n")
+  end
+
+  private
+  def parse_timesheet
+    @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).map do |match|
+      match[0].gsub(/"/, '').split(',').map { |x|
+        CGI.unescape(x.strip).delete('[]')
+      }.values_at(0, 7, 8, 9, 11, 12)
+    end
   end
 end
 
@@ -85,5 +97,6 @@ if __FILE__ == $0
     client.login config['username'], config['password']
     client.select_current_week
     client.fill_timesheet
+    client.extract_timesheet
   end
 end
