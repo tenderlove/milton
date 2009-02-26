@@ -5,8 +5,7 @@ require 'hoe'
 require './lib/milton.rb'
 
 Hoe.new('milton', Milton::VERSION) do |p|
-  # p.rubyforge_name = 'miltonx' # if different than lowercase project name
-  # p.developer('FIX', 'FIX@example.com')
+  p.developer('Aaron Patterson', 'aaronp@rubyforge.org')
 end
 
 # vim: syntax=Ruby

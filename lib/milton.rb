@@ -2,7 +2,7 @@ require 'mechanize'
 require 'logger'
 
 class Milton
-  VERSION = '1.0.0'
+  VERSION = '0.0.0'
 
   def initialize &block
     @agent = WWW::Mechanize.new
