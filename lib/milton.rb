@@ -1,5 +1,7 @@
+require 'rubygems'
 require 'mechanize'
 require 'logger'
+require 'cgi'
 
 class Milton
   VERSION = '0.0.0'
