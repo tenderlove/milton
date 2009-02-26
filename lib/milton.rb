@@ -42,6 +42,16 @@ class Milton
     }.submit
   end
 
+  def rows_per_day= rows = 1
+    @page.save('foo.html')
+    @page = @page.form('Form1') { |form|
+      form['__EVENTTARGET'] = 'SETNOOFROWS'
+      form['__EVENTARGUMENT'] = rows.to_s
+      form['__PageDirty']   = 'False'
+    }.submit
+    @page.save('bar.html')
+  end
+
   def fill_timesheet
     rows = []
     parse_timesheet.each do |data|
@@ -95,6 +105,7 @@ if __FILE__ == $0
     client.client_name = config['client_name']
     client.login config['username'], config['password']
     client.select_current_week
+    client.rows_per_day = 1
     client.fill_timesheet
     client.extract_timesheet
   end
