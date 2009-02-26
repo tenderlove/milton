@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby -w
+
+config_file = File.join(ENV['HOME'], '.milton')
+unless File.exist? config_file
+  File.open(config_file, 'wb') { |f|
+    f.write YAML.dump({
+      'client_name' => 'Your client name',
+      'username'    => 'Your username',
+      'password'    => 'Your password',
+    })
+  }
+  abort "Please fill out #{config_file}"
+end
+
+config = YAML.load_file(config_file)
+Milton.new do |client|
+  client.client_name = config['client_name']
+  client.login config['username'], config['password']
+  client.select_current_week
+  client.rows_per_day = 1
+  client.fill_timesheet
+  client.extract_timesheet
+end
