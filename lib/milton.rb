@@ -149,14 +149,3 @@ class Milton
 
 end
 
-if __FILE__ == $0
-  config = YAML.load_file(File.join(ENV['HOME'], '.milton'))
-  Milton.new do |client|
-    client.client_name = config['client_name']
-    client.login config['username'], config['password']
-    client.select_current_week
-    client.rows_per_day = 1
-    client.fill_timesheet
-    client.extract_timesheet
-  end
-end
