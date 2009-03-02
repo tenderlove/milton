@@ -2,8 +2,13 @@ require 'rubygems'
 require 'mechanize'
 require 'logger'
 require 'cgi'
+require 'date'
+
+##
+# Milton fills out timesheets for the ADP ezLaborManager.
 
 class Milton
+
   VERSION = '1.0.0'
 
   def initialize &block
@@ -12,6 +17,9 @@ class Milton
     @username = nil
     yield self if block_given?
   end
+
+  ##
+  # Sets the client name +name+
 
   def client_name= name
     page = @agent.get('http://workforceportal.elabor.com/ezLaborManagerNetRedirect/clientlogin.aspx')
@@ -24,6 +32,9 @@ class Milton
     @page = @page.form_with(:action => /adp\.com/).submit
   end
 
+  ##
+  # Logs in +username+ with +password+
+
   def login username, password
     @username = username
 
@@ -34,17 +45,11 @@ class Milton
     }.submit.link_with(:text => 'Time Sheet').click
   end
 
+  ##
+  # Selects the current week's timesheet
+
   def select_current_week
-    today = Date.today
-    monday = today - today.wday + 1
-    friday = monday + 4
-    @page = @page.form('Form1') { |form|
-      form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
-      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
-      form['ctrlDtRangeSelector:BeginDate']     = monday.strftime('%m/%d/%Y')
-      form['ctrlDtRangeSelector:EndDate']       = friday.strftime('%m/%d/%Y')
-      form['__PageDirty']   = 'False'
-    }.submit
+    select_week_of Date.today
   end
 
   def rows_per_day= rows = 1
@@ -54,6 +59,9 @@ class Milton
       form['__PageDirty']   = 'False'
     }.submit
   end
+
+  ##
+  # Fills in timesheet rows that don't already have data
 
   def fill_timesheet
     rows = []
@@ -74,7 +82,7 @@ class Milton
       '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
 
     end
-    
+
     @page = @page.form('Form1') { |form|
       ## FIXME: Fill out this form
       form['hdnRETURNDATA'] = rows.map { |row|
@@ -88,6 +96,9 @@ class Milton
     }.submit
   end
 
+  ##
+  # Prints out your timesheet for the selected time frame
+
   def extract_timesheet
     timesheet = parse_timesheet
 
@@ -99,8 +110,27 @@ class Milton
     puts "-" * 80
 
     timesheet.each do |row|
-      puts "#{row[2]} #{row[3]} to #{row[4]} for %2d hours" % row[5].to_i
+      if row[0] == '0' then
+        puts "#{row[2]} no time entered"
+      else
+        puts "#{row[2]} #{row[3]} to #{row[4]} for %2d hours" % row[5].to_i
+      end
     end
+  end
+
+  ##
+  # Selects the timesheet for the week containing +date+
+
+  def select_week_of(date)
+    monday = date - date.wday + 1
+    friday = monday + 4
+    @page = @page.form('Form1') { |form|
+      form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
+      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
+      form['ctrlDtRangeSelector:BeginDate']     = monday.strftime('%m/%d/%Y')
+      form['ctrlDtRangeSelector:EndDate']       = friday.strftime('%m/%d/%Y')
+      form['__PageDirty']   = 'False'
+    }.submit
   end
 
   private
@@ -116,6 +146,7 @@ class Milton
       }.values_at(0, 7, 8, 9, 11, 12, 14, 15)
     end
   end
+
 end
 
 if __FILE__ == $0

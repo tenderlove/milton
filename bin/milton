@@ -15,12 +15,29 @@ unless File.exist? config_file
   abort "Please fill out #{config_file}"
 end
 
+date = nil
+view = false
+
+ARGV.each do |arg|
+  date = Date.parse $1 if arg =~ /^--date=(.*)/
+  view = true if arg =~ /^--view$/
+end
+
 config = YAML.load_file(config_file)
 Milton.new do |client|
   client.client_name = config['client_name']
   client.login config['username'], config['password']
-  client.select_current_week
-  client.rows_per_day = 1
-  client.fill_timesheet
+
+  if date then
+    client.select_week_of date
+  else
+    client.select_current_week
+  end
+
+  unless view then
+    client.rows_per_day = 1
+    client.fill_timesheet
+  end
+
   client.extract_timesheet
 end
