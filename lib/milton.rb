@@ -4,11 +4,12 @@ require 'logger'
 require 'cgi'
 
 class Milton
-  VERSION = '0.0.0'
+  VERSION = '1.0.0'
 
   def initialize &block
     @agent = WWW::Mechanize.new
     @page = nil
+    @username = nil
     yield self if block_given?
   end
 
@@ -24,6 +25,8 @@ class Milton
   end
 
   def login username, password
+    @username = username
+
     @page = @page.form('Login') { |form|
       form['txtUserID']     = username
       form['txtPassword']   = password
@@ -86,10 +89,26 @@ class Milton
   end
 
   def extract_timesheet
-    puts parse_timesheet.map { |x| x.join(', ') }.join("\n")
+    timesheet = parse_timesheet
+
+    department  = timesheet.first[6]
+    employee_id = timesheet.first[7]
+
+    puts "Employee #{@username} id #{employee_id}, department #{department}"
+
+    puts "-" * 80
+
+    timesheet.each do |row|
+      puts "#{row[2]} #{row[3]} to #{row[4]} for %2d hours" % row[5].to_i
+    end
   end
 
   private
+
+  ##
+  # Returns an array of arrays containing: row id, day start time, date, start
+  # time, end time, hours, department, employee id.  All values are strings.
+
   def parse_timesheet
     @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).map do |match|
       match[0].gsub(/"/, '').split(',').map { |x|
