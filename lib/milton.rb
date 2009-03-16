@@ -34,6 +34,20 @@ class Milton
       'view' => false
     }
 
+    if argv.grep(/--help/) then
+      puts <<-EOF
+milton [options]
+
+Milton fills out your ADP timesheet for you.  By default it fills it out for
+the current week with eight hours/day.
+
+  --view             - Only view your current timesheet
+
+  --date=mm/dd/yyyy  - Select week by day
+      EOF
+      exit
+    end
+
     argv.each do |arg|
       options['date'] = Date.parse $1 if arg =~ /^--date=(.*)/
       options['view'] = true if arg =~ /^--view$/
