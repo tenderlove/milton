@@ -130,7 +130,7 @@ the current week with eight hours/day.
     end
 
     unless config['view'] then
-      rows_per_day = 1
+      self.rows_per_day = 1
       fill_timesheet
     end
 
