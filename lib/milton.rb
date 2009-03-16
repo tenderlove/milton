@@ -22,7 +22,7 @@ class Milton
         })
       end
 
-      raise "Please fill out #{config_file}"
+      raise "Please fill out #{config_file}. We've created a template there for you to edit."
     end
 
     YAML.load_file config_file
