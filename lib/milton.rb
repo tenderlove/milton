@@ -58,9 +58,10 @@ the current week with eight hours/day.
 
   def self.run argv = ARGV
     config_file = File.join Gem.user_home, '.milton'
-    config = load_config config_file
 
     options = parse_args argv
+
+    config = load_config config_file
 
     options.merge! config
 
