@@ -34,7 +34,7 @@ class Milton
       'view' => false
     }
 
-    if argv.grep(/--help/) then
+    if (arr = argv.grep(/--help/)) && !arr.empty?
       puts <<-EOF
 milton [options]
 
