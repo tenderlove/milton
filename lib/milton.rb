@@ -3,6 +3,7 @@ require 'mechanize'
 require 'logger'
 require 'cgi'
 require 'date'
+require 'yaml'
 
 ##
 # Milton fills out timesheets for the ADP ezLaborManager.
@@ -10,6 +11,47 @@ require 'date'
 class Milton
 
   VERSION = '1.0.0'
+
+  def self.load_config config_file
+    unless File.exist? config_file then
+      open config_file, 'wb' do |f|
+        f.write YAML.dump({
+          'client_name' => 'Your client name',
+          'username'    => 'Your username',
+          'password'    => 'Your password',
+        })
+      end
+
+      raise "Please fill out #{config_file}"
+    end
+
+    YAML.load_file config_file
+  end
+
+  def self.parse_args argv
+    options = {
+      'date' => nil,
+      'view' => false
+    }
+
+    argv.each do |arg|
+      options['date'] = Date.parse $1 if arg =~ /^--date=(.*)/
+      options['view'] = true if arg =~ /^--view$/
+    end
+
+    options
+  end
+
+  def self.run argv = ARGV
+    config_file = File.join Gem.user_home, '.milton'
+    config = load_config config_file
+
+    options = parse_args argv
+
+    options.merge! config
+
+    new.run config
+  end
 
   def initialize &block
     @agent = WWW::Mechanize.new
@@ -58,6 +100,26 @@ class Milton
       form['__EVENTARGUMENT'] = rows.to_s
       form['__PageDirty']   = 'False'
     }.submit
+  end
+
+  def run config
+    self.client_name = config['client_name']
+    login config['username'], config['password']
+
+    date = config['date']
+
+    if date then
+      select_week_of date
+    else
+      select_current_week
+    end
+
+    unless config['view'] then
+      rows_per_day = 1
+      fill_timesheet
+    end
+
+    extract_timesheet
   end
 
   ##

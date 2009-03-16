@@ -1,43 +1,6 @@
 #!/usr/bin/env ruby -w
 
-require 'yaml'
 require 'milton'
 
-config_file = File.join(ENV['HOME'], '.milton')
-unless File.exist? config_file
-  File.open(config_file, 'wb') { |f|
-    f.write YAML.dump({
-      'client_name' => 'Your client name',
-      'username'    => 'Your username',
-      'password'    => 'Your password',
-    })
-  }
-  abort "Please fill out #{config_file}"
-end
+Milton.run
 
-date = nil
-view = false
-
-ARGV.each do |arg|
-  date = Date.parse $1 if arg =~ /^--date=(.*)/
-  view = true if arg =~ /^--view$/
-end
-
-config = YAML.load_file(config_file)
-Milton.new do |client|
-  client.client_name = config['client_name']
-  client.login config['username'], config['password']
-
-  if date then
-    client.select_week_of date
-  else
-    client.select_current_week
-  end
-
-  unless view then
-    client.rows_per_day = 1
-    client.fill_timesheet
-  end
-
-  client.extract_timesheet
-end
