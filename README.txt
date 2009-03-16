@@ -4,29 +4,44 @@
 
 == DESCRIPTION:
 
-FIX (describe your package)
+Milton fills out your ADP ezLaborManager timesheet
 
 == FEATURES/PROBLEMS:
 
-* FIX (list of features or problems)
+* Fills out timesheets for arbitrary weeks
+* Does not account for time off
 
 == SYNOPSIS:
 
-  FIX (code sample of usage)
+To fill out the current week:
+
+  milton
+
+To view your timesheet for the current week:
+
+  milton --view
+
+To fill out a timesheet for an arbitrary week:
+
+  milton --date=02/25/2009
+
+To view a timesheet for an arbitrary week:
+
+  milton --view --date=02/25/2009
 
 == REQUIREMENTS:
 
-* FIX (list of requirements)
+* ADP ezLaborManager client name, username and password
 
 == INSTALL:
 
-* FIX (sudo gem install, anything else)
+* sudo gem install milton
 
 == LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2009 FIX
+Copyright (c) 2009 Aaron Patterson, Eric Hodel
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
