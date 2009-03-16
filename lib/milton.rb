@@ -65,7 +65,7 @@ the current week with eight hours/day.
 
     options.merge! config
 
-    new.run config
+    new.run options
   end
 
   def initialize &block
