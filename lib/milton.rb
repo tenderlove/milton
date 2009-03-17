@@ -44,6 +44,8 @@ the current week with eight hours/day.
   --view             - Only view your current timesheet
 
   --date=mm/dd/yyyy  - Select week by day
+
+  --fuck-the-man    - Do not include lunch when submitting your timesheet
       EOF
       exit
     end
@@ -51,6 +53,7 @@ the current week with eight hours/day.
     argv.each do |arg|
       options['date'] = Date.parse $1 if arg =~ /^--date=(.*)/
       options['view'] = true if arg =~ /^--view$/
+      options['rows_per_day'] = 1 if arg =~ /^--fuck-the-man/
     end
 
     options
@@ -109,7 +112,8 @@ the current week with eight hours/day.
     select_week_of Date.today
   end
 
-  def rows_per_day= rows = 1
+  def rows_per_day= rows = 2
+    @rows_per_day = rows
     @page = @page.form('Form1') { |form|
       form['__EVENTTARGET'] = 'SETNOOFROWS'
       form['__EVENTARGUMENT'] = rows.to_s
@@ -130,7 +134,7 @@ the current week with eight hours/day.
     end
 
     unless config['view'] then
-      self.rows_per_day = 1
+      self.rows_per_day = config['rows_per_day'] || 2
       fill_timesheet
     end
 
@@ -142,6 +146,8 @@ the current week with eight hours/day.
 
   def fill_timesheet
     rows = []
+    last_date = nil
+    
     parse_timesheet.each do |data|
       next if data[0].to_i > 0
 
@@ -149,15 +155,20 @@ the current week with eight hours/day.
       employee_id = data[7]
       date        = Date.parse(CGI.unescape(data[1])).strftime('%m/%d/%Y')
 
+      start, finish = starting_and_ending_timestamp(date, last_date)
+
+      
       rows << ['0','','False','True','False','False','False',
       "#{date} 12:00:00 AM",
-      "#{date} 08:30 AM",'',
-      '04:30 PM',
+      start,'',
+      finish,
       '8','',
       department,
       employee_id,
       '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
 
+      # This reset is for the timestamp calculations.
+      last_date = date
     end
 
     @page = @page.form('Form1') { |form|
@@ -224,5 +235,23 @@ the current week with eight hours/day.
     end
   end
 
+  ##
+  # Returns the starting and ending EZLabor-style timestamps for the
+  # current date row in the timesheet.
+  def starting_and_ending_timestamp(date, last_date)
+    if @rows_per_day == 2
+      if last_date == date
+        start_timestamp = "#{date} 08:30 AM"
+        end_timestamp = '12:00 PM'
+      else
+        start_timestamp = "#{date} 12:30 PM"
+        end_timestamp = '04:30 PM'
+      end
+    else
+      start_timestamp = "#{date} 08:30 AM"
+      end_timestamp = '04:30 PM'
+    end
+    return start_timestamp, end_timestamp
+  end
 end
 
