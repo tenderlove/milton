@@ -245,7 +245,7 @@ the current week with eight hours/day.
         end_timestamp = '12:00 PM'
       else
         start_timestamp = "#{date} 12:30 PM"
-        end_timestamp = '04:30 PM'
+        end_timestamp = '05:00 PM'
       end
     else
       start_timestamp = "#{date} 08:30 AM"
