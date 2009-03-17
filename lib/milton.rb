@@ -3,6 +3,8 @@ require 'mechanize'
 require 'logger'
 require 'cgi'
 require 'date'
+require 'optparse'
+require 'optparse/date'
 require 'yaml'
 
 ##
@@ -34,27 +36,36 @@ class Milton
       'view' => false
     }
 
-    if (arr = argv.grep(/--help/)) && !arr.empty?
-      puts <<-EOF
-milton [options]
+    opts = OptionParser.new do |opt|
+      opt.program_name = File.basename $0
+      opt.version = Milton::VERSION
+      opt.release = nil
+      opt.banner = <<-EOF
+Usage: #{opt.program_name} [options]
 
 Milton fills out your ADP timesheet for you.  By default it fills it out for
 the current week with eight hours/day.
-
-  --view             - Only view your current timesheet
-
-  --date=mm/dd/yyyy  - Select week by day
-
-  --fuck-the-man    - Do not include lunch when submitting your timesheet
       EOF
-      exit
+
+      opt.separator nil
+
+      opt.on('--view',
+             'Only view your current timesheet') do |value|
+        options['view'] = value
+      end
+
+      opt.on('--date=DATE', Date,
+             'Select week by day') do |value|
+        options['date'] = value
+      end
+
+      opt.on('--fuck-the-man',
+             'Do not include lunch in your timesheet') do |value|
+        options['rows_per_day'] = 1
+      end
     end
 
-    argv.each do |arg|
-      options['date'] = Date.parse $1 if arg =~ /^--date=(.*)/
-      options['view'] = true if arg =~ /^--view$/
-      options['rows_per_day'] = 1 if arg =~ /^--fuck-the-man/
-    end
+    opts.parse! argv
 
     options
   end
