@@ -212,7 +212,7 @@ the current week with eight hours/day.
       if row[0] == '0' then
         puts "#{row[2]} no time entered"
       else
-        puts "#{row[2]} #{row[3]} to #{row[4]} for %2d hours" % row[5].to_i
+        puts "#{row[2]} #{row[3]} to #{row[4]} for %2s hours" % row[5]
       end
     end
   end
