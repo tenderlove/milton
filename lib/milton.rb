@@ -59,6 +59,11 @@ the current week with eight hours/day.
         options['date'] = value
       end
 
+      opt.on('--month [DATE]', Date, 'Select month by day') do |value|
+        options['view'] = true  # For your safety, you can only view months
+        options['month'] = value || Date.today
+      end
+
       opt.on('--fuck-the-man',
              'Do not include lunch in your timesheet') do |value|
         options['rows_per_day'] = 1
@@ -136,10 +141,13 @@ the current week with eight hours/day.
     self.client_name = config['client_name']
     login config['username'], config['password']
 
-    date = config['date']
+    date  = config['date']
+    month = config['month']
 
     if date then
       select_week_of date
+    elsif month
+      select_month_of month
     else
       select_current_week
     end
@@ -220,19 +228,29 @@ the current week with eight hours/day.
   ##
   # Selects the timesheet for the week containing +date+
 
-  def select_week_of(date)
+  def select_week_of date
     monday = date - date.wday + 1
     friday = monday + 4
-    @page = @page.form('Form1') { |form|
-      form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
-      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
-      form['ctrlDtRangeSelector:BeginDate']     = monday.strftime('%m/%d/%Y')
-      form['ctrlDtRangeSelector:EndDate']       = friday.strftime('%m/%d/%Y')
-      form['__PageDirty']   = 'False'
-    }.submit
+    select_range(monday, friday)
+  end
+
+  def select_month_of date
+    first = date - date.mday + 1
+    last  = Date.new(first.year, first.month, -1)
+    select_range(first, last)
   end
 
   private
+
+  def select_range start, finish
+    @page = @page.form('Form1') { |form|
+      form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
+      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
+      form['ctrlDtRangeSelector:BeginDate']     = start.strftime('%m/%d/%Y')
+      form['ctrlDtRangeSelector:EndDate']       = finish.strftime('%m/%d/%Y')
+      form['__PageDirty']   = 'False'
+    }.submit
+  end
 
   ##
   # Returns an array of arrays containing: row id, day start time, date, start
