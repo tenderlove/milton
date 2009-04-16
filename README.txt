@@ -1,6 +1,6 @@
 = milton
 
-* FIX (url)
+* http://seattlerb.rubyforge.org/milton
 
 == DESCRIPTION:
 
