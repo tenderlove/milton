@@ -3,5 +3,6 @@ Manifest.txt
 README.txt
 Rakefile
 bin/milton
+bin/recorder
 lib/milton.rb
 test/test_milton.rb
