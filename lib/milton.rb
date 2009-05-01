@@ -114,11 +114,13 @@ the current week with eight hours/day.
   def login username, password
     @username = username
 
-    @page = @page.form('Login') { |form|
+    page = @page.form('Login') { |form|
       form['txtUserID']     = username
       form['txtPassword']   = password
       form['__EVENTTARGET'] = 'btnLogin'
-    }.submit.link_with(:text => 'Time Sheet').click
+    }.submit
+    change_password if page.body =~ /Old Password/
+    @page = page.link_with(:text => 'Time Sheet').click
   end
 
   ##
@@ -166,7 +168,7 @@ the current week with eight hours/day.
   def fill_timesheet
     rows = []
     last_date = nil
-    
+
     parse_timesheet.each do |data|
       next if data[0].to_i > 0
 
@@ -176,7 +178,6 @@ the current week with eight hours/day.
 
       start, finish = starting_and_ending_timestamp(date, last_date)
 
-      
       rows << ['0','','False','True','False','False','False',
       "#{date} 12:00:00 AM",
       start,'',
@@ -241,6 +242,11 @@ the current week with eight hours/day.
   end
 
   private
+
+  def change_password
+    puts "Your password needs to be updated.  :-("
+    exit
+  end
 
   def select_range start, finish
     @page = @page.form('Form1') { |form|
