@@ -114,13 +114,13 @@ the current week with eight hours/day.
   def login username, password
     @username = username
 
-    page = @page.form('Login') { |form|
+    @page = @page.form('Login') { |form|
       form['txtUserID']     = username
       form['txtPassword']   = password
       form['__EVENTTARGET'] = 'btnLogin'
     }.submit
-    change_password if page.body =~ /Old Password/
-    @page = page.link_with(:text => 'Time Sheet').click
+    change_password if @page.body =~ /Old Password/
+    @page = @page.link_with(:text => 'Time Sheet').click
   end
 
   ##
@@ -245,6 +245,7 @@ the current week with eight hours/day.
 
   def change_password
     puts "Your password needs to be updated.  :-("
+    puts "\t#{@page.uri}"
     exit
   end
 
