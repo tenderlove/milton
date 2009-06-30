@@ -239,8 +239,7 @@ the current week with eight hours/day.
       elsif row[0] == '0' then
         puts "#{row[2]} no time entered"
       elsif date == last_date then
-        puts "           %s to %s for %3s hours %s" %
-          row.values_at(3, 4, 5, 8)
+        puts "           %s to %s for %3s hours %s" % row.values_at(3, 4, 5, 8)
       else
         puts "%s %s to %s for %3s hours %s" % row.values_at(2, 3, 4, 5, 8)
       end
