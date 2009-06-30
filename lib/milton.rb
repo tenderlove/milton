@@ -232,7 +232,7 @@ the current week with eight hours/day.
       if row[0] == '0' then
         puts "#{row[2]} no time entered"
       else
-        puts "#{row[2]} #{row[3]} to #{row[4]} for %3s hours" % row[5]
+        puts "%s %s to %s for %3s hours %s" % row.values_at(2, 3, 4, 5, 8)
       end
     end
   end
@@ -272,13 +272,15 @@ the current week with eight hours/day.
 
   ##
   # Returns an array of arrays containing: row id, day start time, date, start
-  # time, end time, hours, department, employee id.  All values are strings.
+  # time, end time, hours, department, employee id and earnings code.  All
+  # values are strings.
 
   def parse_timesheet
     @page.body.scan(/TCMS.oTD.push\((\[.*\])\)/).map do |match|
-      match[0].gsub(/"/, '').split(',').map { |x|
+      row = match[0].gsub(/"/, '').split(',')
+      row.map { |x|
         CGI.unescape(x.strip).delete('[]')
-      }.values_at(0, 7, 8, 9, 11, 12, 14, 15)
+      }.values_at(0, 7, 8, 9, 11, 12, 14, 15, 32)
     end
   end
 
