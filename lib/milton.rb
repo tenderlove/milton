@@ -168,24 +168,35 @@ the current week with eight hours/day.
   def fill_timesheet
     rows = []
     last_date = nil
+    filled_in = false
 
     parse_timesheet.each do |data|
-      next if data[0].to_i > 0
-
       department  = data[6]
       employee_id = data[7]
       date        = Date.parse(CGI.unescape(data[1])).strftime('%m/%d/%Y')
 
-      start, finish = starting_and_ending_timestamp(date, last_date)
+      # skip days with data already filled (like holidays)
+      if data[0].to_i > 0 or (filled_in and date == last_date) then
+        filled_in = true
+        last_date = date
+        next
+      end
 
-      rows << ['0','','False','True','False','False','False',
-      "#{date} 12:00:00 AM",
-      start,'',
-      finish,
-      '8','',
-      department,
-      employee_id,
-      '','','','','','','','','','','','','','','','','','','','','EDIT','','','','','2','','0','False']
+      filled_in = false
+
+      start, finish = starting_and_ending_timestamp date, last_date
+
+      rows << [
+        '0', '', 'False', 'True', 'False', 'False', 'False',
+        "#{date} 12:00:00 AM",
+        start, '',
+        finish,
+        '8', '',
+        department,
+        employee_id,
+        '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+        '', '', '', 'EDIT', '', '', '', '', '2', '', '0', 'False'
+      ]
 
       # This reset is for the timestamp calculations.
       last_date = date
@@ -221,7 +232,7 @@ the current week with eight hours/day.
       if row[0] == '0' then
         puts "#{row[2]} no time entered"
       else
-        puts "#{row[2]} #{row[3]} to #{row[4]} for %2s hours" % row[5]
+        puts "#{row[2]} #{row[3]} to #{row[4]} for %3s hours" % row[5]
       end
     end
   end
