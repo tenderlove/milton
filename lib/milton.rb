@@ -228,12 +228,24 @@ the current week with eight hours/day.
 
     puts "-" * 80
 
+    date      = nil
+    last_date = nil
+
     timesheet.each do |row|
-      if row[0] == '0' then
+      date = row[2]
+
+      if row[0] == '0' and date == last_date then
+        # do nothing
+      elsif row[0] == '0' then
         puts "#{row[2]} no time entered"
+      elsif date == last_date then
+        puts "           %s to %s for %3s hours %s" %
+          row.values_at(3, 4, 5, 8)
       else
         puts "%s %s to %s for %3s hours %s" % row.values_at(2, 3, 4, 5, 8)
       end
+
+      last_date = date
     end
   end
 
