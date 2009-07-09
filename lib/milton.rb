@@ -12,7 +12,7 @@ require 'yaml'
 
 class Milton
 
-  VERSION = '1.0.1'
+  VERSION = '1.1.0'
 
   def self.load_config config_file
     unless File.exist? config_file then
