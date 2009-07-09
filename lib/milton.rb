@@ -32,8 +32,9 @@ class Milton
 
   def self.parse_args argv
     options = {
-      'date' => nil,
-      'view' => false
+      'date'  => nil,
+      'debug' => false,
+      'view'  => false,
     }
 
     opts = OptionParser.new do |opt|
@@ -57,6 +58,11 @@ the current week with eight hours/day.
       opt.on('--date=DATE', Date,
              'Select week by day') do |value|
         options['date'] = value
+      end
+
+      opt.on('--debug',
+             'Print out URLs we visit') do |debug|
+        options['debug'] = debug
       end
 
       opt.on('--month [DATE]', Date, 'Select month by day') do |value|
@@ -119,7 +125,7 @@ the current week with eight hours/day.
       form['txtPassword']   = password
       form['__EVENTTARGET'] = 'btnLogin'
     }.submit
-    change_password if @page.body =~ /Old Password/
+    change_password password if @page.body =~ /Old Password/
     @page = @page.link_with(:text => 'Time Sheet').click
   end
 
@@ -140,11 +146,17 @@ the current week with eight hours/day.
   end
 
   def run config
+    @debug = config['debug']
+    if @debug then
+      @agent.log = Logger.new $stderr
+      @agent.log.formatter = proc do |s, t, p, m| "#{m}\n" end
+    end
+
     self.client_name = config['client_name']
     login config['username'], config['password']
 
-    date  = config['date']
-    month = config['month']
+    date   = config['date']
+    month  = config['month']
 
     if date then
       select_week_of date
@@ -160,6 +172,9 @@ the current week with eight hours/day.
     end
 
     extract_timesheet
+  rescue => e
+    $stderr.puts @page.parser if @debug and @page
+    raise
   end
 
   ##
@@ -265,10 +280,32 @@ the current week with eight hours/day.
 
   private
 
-  def change_password
-    puts "Your password needs to be updated.  :-("
-    puts "\t#{@page.uri}"
-    exit
+  def change_password old_password
+    new_password = (0...8).map { (rand(26) + 97).chr }.join
+
+    @page = @page.form('Form1') { |form|
+      form['portPasswordReset:fldOldPassword']     = old_password
+      form['portPasswordReset:fldNewPassword']     = new_password
+      form['portPasswordReset:fldConfirmPassword'] = new_password
+      form['__PageDirty']                          = 'False'
+      form['__EVENTTARGET'] = 'portPasswordReset:btnSubmit'
+    }.submit
+
+    if @page then
+      config_file = File.join Gem.user_home, '.milton'
+
+      config = YAML.load_file config_file
+
+      config['password'] = new_password
+
+      open config_file, 'w' do |io|
+        io.write config.to_yaml
+      end
+
+      puts 'Changed your password and updated ~/.milton'
+    else
+      raise 'unable to change password :('
+    end
   end
 
   def select_range start, finish
