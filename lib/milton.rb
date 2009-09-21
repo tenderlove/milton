@@ -126,6 +126,13 @@ the current week with eight hours/day.
       form['__EVENTTARGET'] = 'btnLogin'
     }.submit
     change_password password if @page.body =~ /Old Password/
+
+    if @page.body =~ /Supervisor Services/ then
+      warn "switching to employee page"
+      option = @page.parser.css("select#Banner1_ddlServices").children.find { |n| n["value"] =~ /EmployeeServicesStart/ }
+      @page = @agent.get option["value"]
+    end
+
     @page = @page.link_with(:text => 'Time Sheet').click
   end
 
@@ -234,10 +241,17 @@ the current week with eight hours/day.
   # Prints out your timesheet for the selected time frame
 
   def extract_timesheet
+    @page.parser.css(".ErrorText").each do |n|
+      puts "ERROR: #{n.text}"
+    end
+
     timesheet = parse_timesheet
 
     department  = timesheet.first[6]
     employee_id = timesheet.first[7]
+    error = timesheet.first[9]
+
+    puts "ERROR: #{error}" if error
 
     puts "Employee #{@username} id #{employee_id}, department #{department}"
 
@@ -328,7 +342,7 @@ the current week with eight hours/day.
       row = match[0].gsub(/"/, '').split(',')
       row.map { |x|
         CGI.unescape(x.strip).delete('[]')
-      }.values_at(0, 7, 8, 9, 11, 12, 14, 15, 32)
+      }.values_at(0, 7, 8, 9, 11, 12, 14, 15, 32, 1)
     end
   end
 
