@@ -364,13 +364,13 @@ the current week with eight hours/day.
   def starting_and_ending_timestamp(date, last_date)
     timestamps = schedule_for_date(date, @schedule)
     if timestamps.length > 3 && last_date != date
-      start_timestamp = timestamps[2].strftime("%m/%d/%Y %I:%M %p")
-      end_timestamp = timestamps[3].strftime("%I:%M %p")
+      start_timestamp = timestamps[2]
+      end_timestamp = timestamps[3]
     else
-      start_timestamp = timestamps[0].strftime("%m/%d/%Y %I:%M %p")
-      end_timestamp = timestamps[1].strftime("%I:%M %p")
+      start_timestamp = timestamps[0]
+      end_timestamp = timestamps[1]
     end
-    return start_timestamp, end_timestamp
+    return start_timestamp.strftime("%m/%d/%Y %I:%M %p"), end_timestamp.strftime("%I:%M %p")
   end
 
   ##
