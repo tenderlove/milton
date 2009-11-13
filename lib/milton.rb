@@ -12,7 +12,7 @@ require 'yaml'
 
 class Milton
 
-  VERSION = '1.1.1'
+  VERSION = '1.1.2'
 
   def self.load_config config_file
     unless File.exist? config_file then
@@ -73,6 +73,11 @@ the current week with eight hours/day.
       opt.on('--fuck-the-man',
              'Do not include lunch in your timesheet') do |value|
         options['rows_per_day'] = 1
+      end
+
+      opt.on('--rand',
+             'Randomize entries around scheduled times; time worked unchanged') do |value|
+        options['randomize_time'] = value
       end
     end
 
@@ -157,6 +162,13 @@ the current week with eight hours/day.
     if @debug then
       @agent.log = Logger.new $stderr
       @agent.log.formatter = proc do |s, t, p, m| "#{m}\n" end
+    end
+
+    @randomize_time = config['randomize_time']
+
+    unless @schedule = config['schedule']
+      @schedule = ["8:30 AM", "12 PM", "12:30 PM", "5 PM"] if config['rows_per_day'] == 2
+      @schedule ||= ["8:30 AM", "4:30 PM"]
     end
 
     self.client_name = config['client_name']
@@ -350,19 +362,35 @@ the current week with eight hours/day.
   # Returns the starting and ending EZLabor-style timestamps for the
   # current date row in the timesheet.
   def starting_and_ending_timestamp(date, last_date)
-    if @rows_per_day == 2
-      if last_date == date
-        start_timestamp = "#{date} 08:30 AM"
-        end_timestamp = '12:00 PM'
-      else
-        start_timestamp = "#{date} 12:30 PM"
-        end_timestamp = '05:00 PM'
-      end
+    timestamps = schedule_for_date(date, @schedule)
+    if timestamps.length > 3 && last_date != date
+      start_timestamp = timestamps[2].strftime("%m/%d/%Y %I:%M %p")
+      end_timestamp = timestamps[3].strftime("%I:%M %p")
     else
-      start_timestamp = "#{date} 08:30 AM"
-      end_timestamp = '04:30 PM'
+      start_timestamp = timestamps[0].strftime("%m/%d/%Y %I:%M %p")
+      end_timestamp = timestamps[1].strftime("%I:%M %p")
     end
     return start_timestamp, end_timestamp
   end
+
+  ##
+  # Returns an EZLabor-style array of times for a given date and
+  # day-schedule array.
+  def schedule_for_date(date_str, schedule_arr)
+    time_offset = @randomize_time ? random_time_offset : 0
+    schedule_arr.map do |time_str|
+      dt = DateTime.parse("#{date_str} #{time_str}")
+      time = Time.mktime(dt.year, dt.month, dt.day, dt.hour, dt.min, dt.sec, 0)
+      (time + time_offset)
+    end
+  end
+
+  ##
+  # Randomizes a time value within a given bracket and returns
+  # a +/- number of seconds.
+  def random_time_offset(max_minutes_offset=5)
+    rand(max_minutes_offset) * (-1).power!(rand(2)) * 60
+  end
+
 end
 
