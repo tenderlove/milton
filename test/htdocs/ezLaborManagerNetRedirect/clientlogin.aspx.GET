@@ -1,0 +1,621 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<HTML>
+	<HEAD>
+		<title>
+			 - Client Login
+		</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirect.css?17_1' type="text/css" rel="stylesheet">
+		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirectControlClasses.css?17_1' type="text/css" rel="stylesheet">
+		<script language="javascript" src='/ezLaborManagerNetRedirect/js/commonpagefunctions.js?17_1'></script>	
+	<script language="javascript">
+	<!--
+		function performOnLoad()
+		{
+			calculate();
+			document.forms[0].txtClientName.focus();
+		}
+		function calculate() 
+		{
+		
+			var rightNow = new Date();
+			var jan1 = new Date(rightNow.getFullYear(), 0, 1, 0, 0, 0, 0);
+			var june1 = new Date(rightNow.getFullYear(), 6, 1, 0, 0, 0, 0);
+			var temp = jan1.toGMTString();
+			var jan2 = new Date(temp.substring(0, temp.lastIndexOf(' ')-1));
+			temp = june1.toGMTString();
+			var june2 = new Date(temp.substring(0, temp.lastIndexOf(' ')-1));
+			var std_time_offset = (jan1 - jan2) / (1000 * 60 * 60);
+			var daylight_time_offset = (june1 - june2) / (1000 * 60 * 60);
+			var dst;
+			if (std_time_offset == daylight_time_offset) {
+					dst = "0";
+			} else {
+					var hemisphere = std_time_offset - daylight_time_offset;
+					if (hemisphere >= 0)
+						std_time_offset = daylight_time_offset;
+					dst = "1";
+			}
+			var i;
+			var toffset = "";
+			toffset = convert(std_time_offset);
+			TimeZoneArray = new Array(75);
+				
+				TimeZoneArray[0] = new Array(2);
+				TimeZoneArray[0][0] = '+04:30';
+				TimeZoneArray[0][1] = 'Afghanistan Standard Time';
+
+				TimeZoneArray[1] = new Array(2);
+				TimeZoneArray[1][0] = '-09:00';
+				TimeZoneArray[1][1] = 'Alaskan Standard Time';
+
+				TimeZoneArray[2] = new Array(2);
+				TimeZoneArray[2][0] = '+03:00';
+				TimeZoneArray[2][1] = 'Arab Standard Time';
+
+				TimeZoneArray[3] = new Array(2);
+				TimeZoneArray[3][0] = '+04:00';
+				TimeZoneArray[3][1] = 'Arabian Standard Time';
+
+				TimeZoneArray[4] = new Array(2);
+				TimeZoneArray[4][0] = '+03:00';
+				TimeZoneArray[4][1] = 'Arabic Standard Time';
+
+				TimeZoneArray[5] = new Array(2);
+				TimeZoneArray[5][0] = "-04:00";
+				TimeZoneArray[5][1] = "Atlantic Standard Time";
+
+				TimeZoneArray[6] = new Array(2);
+				TimeZoneArray[6][0] = "+09:30";
+				TimeZoneArray[6][1] = "AUS Central Standard Time";
+
+				TimeZoneArray[7] = new Array(2);
+				TimeZoneArray[7][0] = "+10:00";
+				TimeZoneArray[7][1] = "AUS Eastern Standard Time";
+
+				TimeZoneArray[8] = new Array(2);
+				TimeZoneArray[8][0] = "-01:00";
+				TimeZoneArray[8][1] = "Azores Standard Time";
+
+				TimeZoneArray[9] = new Array(2);
+				TimeZoneArray[9][0] = "-06:00";
+				TimeZoneArray[9][1] = "Canada Central Standard Time";
+
+				TimeZoneArray[10] = new Array(2);
+				TimeZoneArray[10][0] = "-01:00";
+				TimeZoneArray[10][1] = "Cape Verde Standard Time";
+
+				TimeZoneArray[11] = new Array(2);
+				TimeZoneArray[11][0] = "+04:00";
+				TimeZoneArray[11][1] = "Caucasus Standard Time";
+
+				TimeZoneArray[12] = new Array(2);
+				TimeZoneArray[12][0] = "+09:30";
+				TimeZoneArray[12][1] = "Cen. Australia Standard Time";
+
+				TimeZoneArray[13] = new Array(2);
+				TimeZoneArray[13][0] = "-06:00";
+				TimeZoneArray[13][1] = "Central America Standard Time";
+
+				TimeZoneArray[14] = new Array(2);
+				TimeZoneArray[14][0] = "+06:00";
+				TimeZoneArray[14][1] = "Central Asia Standard Time";
+
+				TimeZoneArray[15] = new Array(2);
+				TimeZoneArray[15][0] = "+06:00";
+				TimeZoneArray[15][1] = "Central Asia Standard Time";
+
+				TimeZoneArray[16] = new Array(2);
+				TimeZoneArray[16][0] = "+01:00";
+				TimeZoneArray[16][1] = "Central Europe Standard Time";
+
+				TimeZoneArray[17] = new Array(2);
+				TimeZoneArray[17][0] = "+01:00";
+				TimeZoneArray[17][1] = "Central European Standard Time";
+
+				TimeZoneArray[18] = new Array(2);
+				TimeZoneArray[18][0] = "+11:00";
+				TimeZoneArray[18][1] = "Central Pacific Standard Time";
+
+      			TimeZoneArray[19] = new Array(2);
+				TimeZoneArray[19][0] = "-06:00";
+				TimeZoneArray[19][1] = "Central Standard Time";
+
+				TimeZoneArray[20] = new Array(2);
+				TimeZoneArray[20][0] = "+08:00";
+				TimeZoneArray[20][1] = "China Standard Time";
+
+				TimeZoneArray[21] = new Array(2);
+				TimeZoneArray[21][0] = "-12:00";
+				TimeZoneArray[21][1] = "Dateline Standard Time";
+
+				TimeZoneArray[22] = new Array(2);
+				TimeZoneArray[22][0] = "+03:00";
+				TimeZoneArray[22][1] = "E. Africa Standard Time";
+
+				TimeZoneArray[23] = new Array(2);
+				TimeZoneArray[23][0] = "+10:00";
+				TimeZoneArray[23][1] = "E. Australia Standard Time";
+
+				TimeZoneArray[24] = new Array(2);
+				TimeZoneArray[24][0] = "+02:00";
+				TimeZoneArray[24][1] = "E. Europe Standard Time";
+
+          		TimeZoneArray[25] = new Array(2);
+				TimeZoneArray[25][0] = "-03:00";
+				TimeZoneArray[25][1] = "E. South America Standard Time";
+
+				TimeZoneArray[26] = new Array(2);
+				TimeZoneArray[26][0] = "-05:00";
+				TimeZoneArray[26][1] = "Eastern Standard Time";
+
+				TimeZoneArray[27] = new Array(2);
+				TimeZoneArray[27][0] = "+02:00";
+				TimeZoneArray[27][1] = "Egypt Standard Time";
+
+				TimeZoneArray[28] = new Array(2);
+				TimeZoneArray[28][0] = "+05:00";
+				TimeZoneArray[28][1] = "Ekaterinburg Standard Time";
+
+				TimeZoneArray[29] = new Array(2);
+				TimeZoneArray[29][0] = "+12:00";
+				TimeZoneArray[29][1] = "Fiji Standard Time";
+
+				TimeZoneArray[30] = new Array(2);
+				TimeZoneArray[30][0] = "+02:00";
+				TimeZoneArray[30][1] = "FLE Standard Time";
+
+				TimeZoneArray[31] = new Array(2);
+				TimeZoneArray[31][0] = "+00:00";
+				TimeZoneArray[31][1] = "GMT Standard Time";
+
+				TimeZoneArray[32] = new Array(2);
+				TimeZoneArray[32][0] = "-03:00";
+				TimeZoneArray[32][1] = "Greenland Standard Time";
+
+				TimeZoneArray[33] = new Array(2);
+				TimeZoneArray[33][0] = "-00:00";
+				TimeZoneArray[33][1] = "Greenwich Standard Time";
+
+				TimeZoneArray[34] = new Array(2);
+				TimeZoneArray[34][0] = "+02:00";
+				TimeZoneArray[34][1] = "GTB Standard Time";
+
+				TimeZoneArray[35] = new Array(2);
+  				TimeZoneArray[35][0] = "-10:00";
+				TimeZoneArray[35][1] = "Hawaiian Standard Time";
+
+				TimeZoneArray[36] = new Array(2);
+				TimeZoneArray[36][0] = '+05:30';
+				TimeZoneArray[36][1] = 'India Standard Time';
+
+				TimeZoneArray[37] = new Array(2);
+				TimeZoneArray[37][0] = "+03:30";
+				TimeZoneArray[37][1] = "Iran Standard Time";
+
+				TimeZoneArray[38] = new Array(2);
+				TimeZoneArray[38][0] = "+02:00";
+				TimeZoneArray[38][1] = "Israel Standard Time";
+
+				TimeZoneArray[39] = new Array(2);
+				TimeZoneArray[39][0] = "+09:00";
+				TimeZoneArray[39][1] = "Korea Standard Time";
+
+				TimeZoneArray[40] = new Array(2);
+				TimeZoneArray[40][0] = "-06:00";
+				TimeZoneArray[40][1] = "Mexico Standard Time";
+
+				TimeZoneArray[41] = new Array(2);
+				TimeZoneArray[41][0] = "-02:00";
+				TimeZoneArray[41][1] = "Mid-Atlantic Standard Time";
+
+				TimeZoneArray[42] = new Array(2);
+				TimeZoneArray[42][0] = "-07:00";
+				TimeZoneArray[42][1] = "Mountain Standard Time";
+
+           		TimeZoneArray[43] = new Array(2);
+				TimeZoneArray[43][0] = "+06:30";
+				TimeZoneArray[43][1] = "Myanmar Standard Time";
+
+           		TimeZoneArray[44] = new Array(2);
+				TimeZoneArray[44][0] = "+06:00";
+				TimeZoneArray[44][1] = "N. Central Asia Standard Time";
+
+				TimeZoneArray[45] = new Array(2);
+				TimeZoneArray[45][0] = "+05:45";
+				TimeZoneArray[45][1] = "Nepal Standard Time";
+
+				TimeZoneArray[46] = new Array(2);
+				TimeZoneArray[46][0] = "+12:00";
+				TimeZoneArray[46][1] = "New Zealand Standard Time";
+
+				TimeZoneArray[47] = new Array(2);
+				TimeZoneArray[47][0] = "-03:30";
+				TimeZoneArray[47][1] = "Newfoundland Standard Time";
+
+				TimeZoneArray[48] = new Array(2);
+				TimeZoneArray[48][0] = "+08:00";
+				TimeZoneArray[48][1] = "North Asia East Standard Time";
+
+				TimeZoneArray[49] = new Array(2);
+				TimeZoneArray[49][0] = "+07:00";
+				TimeZoneArray[49][1] = "North Asia Standard Time";
+
+				TimeZoneArray[50] = new Array(2);
+				TimeZoneArray[50][0] = "-04:00";
+				TimeZoneArray[50][1] = "Pacific SA Standard Time";
+
+
+				TimeZoneArray[51] = new Array(2);
+				TimeZoneArray[51][0] = "-08:00";
+				TimeZoneArray[51][1] = "Pacific Standard Time";
+
+				TimeZoneArray[52] = new Array(2);
+				TimeZoneArray[52][0] = "+01:00";
+				TimeZoneArray[52][1] = "Romance Standard Time";
+
+				TimeZoneArray[53] = new Array(2);
+				TimeZoneArray[53][0] = "+03:00";
+				TimeZoneArray[53][1] = "Russian Standard Time";
+
+				TimeZoneArray[54] = new Array(2);
+				TimeZoneArray[54][0] = "-03:00";
+				TimeZoneArray[54][1] = "SA Eastern Standard Time";
+
+				TimeZoneArray[55] = new Array(2);
+				TimeZoneArray[55][0] = "-05:00";
+				TimeZoneArray[55][1] = "SA Pacific Standard Time";
+
+				TimeZoneArray[56] = new Array(2);
+				TimeZoneArray[56][0] = "-04:00";
+				TimeZoneArray[56][1] = "SA Western Standard Time";
+
+				TimeZoneArray[57] = new Array(2);
+				TimeZoneArray[57][0] = "-11:00";
+				TimeZoneArray[57][1] = "Samoa Standard Time";
+
+				TimeZoneArray[58] = new Array(2);
+				TimeZoneArray[58][0] = "+07:00";
+				TimeZoneArray[58][1] = "SE Asia Standard Time";
+
+				TimeZoneArray[59] = new Array(2);
+				TimeZoneArray[59][0] = "+08:00";
+				TimeZoneArray[59][1] = "Singapore Standard Time";
+
+				TimeZoneArray[60] = new Array(2);
+				TimeZoneArray[60][0] = "+02:00";
+				TimeZoneArray[60][1] = "South Africa Standard Time";
+
+				TimeZoneArray[61] = new Array(2);
+				TimeZoneArray[61][0] = "+06:00";
+				TimeZoneArray[61][1] = "Sri Lanka Standard Time";
+
+				TimeZoneArray[62] = new Array(2);
+				TimeZoneArray[62][0] = "+08:00";
+				TimeZoneArray[62][1] = "Taipei Standard Time";
+
+				TimeZoneArray[63] = new Array(2);
+				TimeZoneArray[63][0] = "+10:00";
+				TimeZoneArray[63][1] = "Tasmania Standard Time";
+
+				TimeZoneArray[64] = new Array(2);
+				TimeZoneArray[64][0] = "+09:00";
+				TimeZoneArray[64][1] = "Tokyo Standard Time";
+
+				TimeZoneArray[65] = new Array(2);
+				TimeZoneArray[65][0] = "+13:00";
+				TimeZoneArray[65][1] = "Tonga Standard Time";
+
+				TimeZoneArray[66] = new Array(2);
+				TimeZoneArray[66][0] = "-05:00";
+				TimeZoneArray[66][1] = "US Eastern Standard Time";
+
+				TimeZoneArray[67] = new Array(2);
+				TimeZoneArray[67][0] = "-07:00";
+				TimeZoneArray[67][1] = "US Mountain Standard Time";
+
+				TimeZoneArray[68] = new Array(2);
+				TimeZoneArray[68][0] = "00:00";
+				TimeZoneArray[68][1] = "UTC";
+
+				TimeZoneArray[69] = new Array(2);
+				TimeZoneArray[69][0] = "+10:00";
+				TimeZoneArray[69][1] = "Vladivostok Standard Time";
+
+				TimeZoneArray[70] = new Array(2);
+				TimeZoneArray[70][0] = "+08:00";
+				TimeZoneArray[70][1] = "W. Australia Standard Time";
+
+				TimeZoneArray[71] = new Array(2);
+				TimeZoneArray[71][0] = "+01:00";
+				TimeZoneArray[71][1] = "W. Central Africa Standard Time";
+
+				TimeZoneArray[72] = new Array(2);
+				TimeZoneArray[72][0] = "+01:00";
+				TimeZoneArray[72][1] = "W. Europe Standard Time";
+
+				TimeZoneArray[73] = new Array(2);
+				TimeZoneArray[73][0] = "+05:00";
+				TimeZoneArray[73][1] = "West Asia Standard Time";
+
+				TimeZoneArray[74] = new Array(2);
+				TimeZoneArray[74][0] = "+10:00";
+				TimeZoneArray[74][1] = "West Pacific Standard Time";
+
+				TimeZoneArray[75] = new Array(2);
+				TimeZoneArray[75][0] = "+09:00";
+				TimeZoneArray[75][1] = "Yakutsk Standard Time";
+		
+   				var goffset = "";
+				var timezone;
+				var hdntz;
+					
+				for (i=0; i < TimeZoneArray.length; i++)
+				{
+					if (TimeZoneArray[i][0] == toffset)
+					{
+						timezone = TimeZoneArray[i][1];
+						document.ClientLoginForm.hdnTimeZone.value = timezone ;
+						break;
+					}
+				}
+				return false;
+		}
+
+	function convert(value)
+		{
+			var hours = parseInt(value);
+   			value -= parseInt(value);
+			value *= 60;
+			var mins = parseInt(value);
+   			value -= parseInt(value);
+			value *= 60;
+			var secs = parseInt(value);
+			var display_hours = hours;
+			display_hours = (hours < 10 && hours > 0) ? "+0"+hours : "+"+hours;
+			display_hours = (hours == 0) ? "0"+hours : display_hours;
+			display_hours = (hours < 0 && hours > -10) ? "-0"+Math.abs(hours) : display_hours;
+			if(hours < 0 && hours >= -12 && hours <= -10)
+			{
+				display_hours = "-" + Math.abs(hours);
+			}
+			else if (hours < 0 && hours > -10)
+			{
+				display_hours = "-0"+Math.abs(hours)
+			}
+			else
+			{
+				display_hours =  display_hours;
+			}
+						
+			if (mins <= 0 && Math.abs(mins) < 10)
+			{
+				mins = "0" + Math.abs(mins);
+			}
+			else if  (mins >= 0 && mins < 10)
+			{
+			
+				mins = "0" + Math.abs(mins);
+			}
+			else
+			{
+				mins = Math.abs(mins);
+			}
+
+			return display_hours+":"+mins;
+		}
+		
+		
+	//-->
+		</script>
+	</HEAD>
+	<body onload="performOnLoad()" marginheight="0" marginwidth="0">
+		<form name="ClientLoginForm" method="post" action="clientlogin.aspx" id="ClientLoginForm">
+<input type="hidden" name="__PageDirty" id="__PageDirty" value="False" />
+<input type="hidden" name="__PageDirtyMsg" id="__PageDirtyMsg" value="Are you sure you want to navigate away from this page?\n\nChanges have been made but not saved.\nYour changes will be lost if you continue.\n\nPress OK to continue, or Cancel to stay on the current page." />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DYuSu9LdS3yix4kEanXNWnaOpysB+VoTZq/tV1Wz9nrL5f/jRBBRsPXDlqL9IleHxa6m5r0ynLKZBC1c0acWgxlrTQ9sUpsbLjWbu6q4Yn4Mbsu9f6sIzmYl2Bke2kalDFnkscTkR8i0C0INeopOwyAXzWtvshb0oZW+fO6dShIMLUoZMLUBePz7sYPuHPbFHSTgs2iq0KStlT1C1/tU6w==" />
+
+<script language="JavaScript">
+var objAboutWindow;
+function OpenAboutWindow()
+{
+objAboutWindow = window.open('/ezLaborManagerNetRedirect/Misc/About.aspx?lng=en-US','ezLaborManagerOptions','width=550,height=575,resizable=1,status=1,scrollbars=1');
+objAboutWindow.focus();
+return void(0);
+}
+</Script>
+<script language="JavaScript">
+var objInfoWindow;
+function OpenInfoWindow(wndw)
+{
+if(wndw != 'p' && wndw != 'l')
+     return;
+
+var windowName = '';
+var windowLocation = '';
+var windowParams = '';
+if(wndw == 'p')
+{
+     windowLocation = '/ezLaborManagerNetRedirect/Misc/Privacy.aspx?lng=en-US';
+     windowName = 'ADPPrivacy';
+     windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
+}
+else
+{
+     windowLocation = '/ezLaborManagerNetRedirect/Misc/Legal.aspx?lng=en-US';
+     windowName = 'ADPLegal';
+     windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
+}
+objInfoWindow = window.open(windowLocation, windowName, windowParams);
+objInfoWindow.focus();
+return void(0);
+}
+</Script>
+
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="O0rZXVLETKbPCxQIsxIAWhNPb8pL0v7gHB5nXr9rV5DaHT6z1Vkg9DtAfwJTu5O0" />
+			<input name="hdnTimeZone" type="hidden" id="hdnTimeZone" />
+			<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+				<tr>
+					<td vAlign="top" height="100%">
+						<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+							<tr>
+								<td height="90">
+<table width="100%" height="100%" cellpadding="0" cellspacing="0" border="0" ID="Table1">
+	
+	<tr>
+		<td width="100%" class="Banner">
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" ID="Table2">
+				<tr>
+					<td valign="middle">
+						<img id="Banner1_ADPImage1" key="ADPLogo.jpg" src="/ezLaborManagerNetRedirect/images/en-US/ADPLogo.jpg" border="0" /></td>
+					<td><IMG width="65" height="1" SRC="/ezLaborManagerNetRedirect/images/spacer.gif"></td>
+					<td valign="middle" width="100%">
+						<table width="100%" cellpadding="0" cellspacing="0" border="0" ID="Table3">
+							<tr>
+								<td valign="top" width="100" bgcolor="red"><IMG width="1" height="1" SRC="/ezLaborManagerNetRedirect/images/spacer.gif"></td>
+							</tr>
+							<tr>
+								<td><IMG height="3" SRC="/ezLaborManagerNetRedirect/images/spacer.gif"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td bgcolor="black" height="1"><IMG height="1" SRC="/ezLaborManagerNetRedirect/images/spacer.gif"></td>
+	</tr>
+	
+	<tr>
+		<td align="right"><img src="/ezLaborManagerNetRedirect/images/1x1transparent.gif" height="40" />
+			
+		</td>
+	</tr>
+</table>
+</td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							
+							<tr>
+								<td vAlign="top" height="100%">
+									<table cellSpacing="0" cellPadding="0" align="center" border="0">
+										<tr>
+											<td align="center">
+												<table cellSpacing="0" cellPadding="0" align="center" border="0">
+													<tr>
+														<td class="ThinRedBox" vAlign="top">
+															<table cellSpacing="0" cellPadding="2" border="0">
+																<tr>
+																	<td class="LanguageTitle" align="center"><span id="lblLanguage" key="lbl_Language">Language</span></td>
+																</tr>
+																<TR>
+																	<TD noWrap><table cellspacing="0" cellpadding="2" border="0">
+	<tr>
+		<td nowrap="nowrap"><a class="AppLink" href="?lng=en-US&amp;flgn=1">English (United States)</a></td>
+	</tr><tr>
+		<td nowrap="nowrap"><a class="AppLink" href="?lng=en-CA&amp;flgn=1">English (Canada)</a></td>
+	</tr><tr>
+		<td nowrap="nowrap"><a class="AppLink" href="?lng=fr-CA&amp;flgn=1">français (Canada)</a></td>
+	</tr><tr>
+		<td nowrap="nowrap"><a class="AppLink" href="?lng=en-GB&amp;flgn=1">English (United Kingdom)</a></td>
+	</tr><tr>
+		<td nowrap="nowrap"><a class="AppLink" href="?lng=en-AU&amp;flgn=1">English (Australia)</a></td>
+	</tr>
+</table></TD>
+																</TR>
+															</table>
+														</td>
+														<td><IMG style="WIDTH: 54px; HEIGHT: 10px" height="10" src="/ezLaborManagerNetRedirect/images/spacer.gif"
+																width="54"></td>
+														<td width="100%">
+															<table cellSpacing="0" cellPadding="0" border="0">
+																<tr>
+																	<td align="center">
+																		<table cellSpacing="0" cellPadding="0" border="0">
+																			<tr>
+																				<td style="HEIGHT: 14px"><span id="lblClientName" class="BoldLabel" key="lbl_ClientName">Client Name</span></td>
+																			</tr>
+																			<tr>
+																				<td><input name="txtClientName" type="text" maxlength="100" id="txtClientName" onkeydown="if(event.keyCode == 13)document.forms[0].__EVENTTARGET.value='btnSubmit';" /></td>
+																			</tr>
+																			<tr>
+																				<td>&nbsp;</td>
+																			</tr>
+																			<tr>
+																				<td><span id="btnSubmit_disabled" class="disabledButton" style="display:none;"><span class="btnLtDis">&nbsp;</span><span class="btnMdDis">Submit</span><span class="btnRtDis">&nbsp;</span></span><a id="btnSubmit_active" href="javascript:__doPostBack('btnSubmit','')" class="btnLink" style="display:inline;"><span class="btnLtAct">&nbsp;</span><span class="btnMdAct">Submit</span><span class="btnRtAct">&nbsp;</span></a><span id="btnSubmit" key="btn_Submit"></span></td>
+																			</tr>
+																		</table>
+																	</td>
+																</tr>
+																<tr>
+																	<td align="center"></td>
+																</tr>
+																<tr>
+																	<td>&nbsp;</td>
+																</tr>
+																<tr>
+																	<td align="center"></td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height="25">
+		<table id="Table22" height="36" cellSpacing="0" cellPadding="0" width="100%" border="0">
+			<tr height="16">
+				<td class="Footer-AppInfoRow" align="center" nowrap colspan="7">12/10/2009 7:01:17 PM&nbsp;v11.017.001.36 - xb&gt;;9g:9e'];_: DPID - sA&gt;yuCnwIA]</td>
+			</tr>
+			<tr height="20">
+				<td class="FooterText" nowrap width="97%">Copyright ©2002 2009-Automatic Data Processing, Inc.&nbsp;</td>
+				<td class="FooterBgColor" width="11" nowrap>
+					<a id="FooterControl1_hypAboutArrow" OnClick="event.cancelBubble=true;" href="javascript:OpenAboutWindow();"><img src="/ezLaborManagerNetRedirect/images/footer_arrow.gif" border="0" /></a>
+				</td>
+				<td class="FooterBgColor" nowrap width="1%">
+					&nbsp;<a id="FooterControl1_hypAbout" class="FooterLink" key="hyp_About" OnClick="event.cancelBubble=true;" href="javascript:OpenAboutWindow();">ABOUT</a>&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="FooterBgColor" width="11" nowrap>
+					<a id="FooterControl1_hypPrivacyArrow" OnClick="event.cancelBubble=true;" href="javascript:OpenInfoWindow('p');"><img src="/ezLaborManagerNetRedirect/images/footer_arrow.gif" border="0" /></a>
+				</td>
+				<td class="FooterBgColor" nowrap width="1%">
+					&nbsp;<a id="FooterControl1_hypPrivacy" class="FooterLink" key="hyp_Privacy" OnClick="event.cancelBubble=true;" href="javascript:OpenInfoWindow('p');">PRIVACY</a>&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="FooterBgColor" width="11" nowrap>
+					<a id="FooterControl1_hypLegalArrow" OnClick="event.cancelBubble=true;" href="javascript:OpenInfoWindow('l');"><img src="/ezLaborManagerNetRedirect/images/footer_arrow.gif" border="0" /></a>
+				</td>
+				<td class="FooterBgColor" nowrap width="1%">
+					&nbsp;<a id="FooterControl1_hypLegal" class="FooterLink" key="hyp_Legal" OnClick="event.cancelBubble=true;" href="javascript:OpenInfoWindow('l');">LEGAL</a>&nbsp;&nbsp;
+				</td>
+			</tr>
+		</table>
+	</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+		</form>
+		<form id="LoginForm" method="post" action="">
+			
+			<input type="hidden" value="" id="cn" name="cn">
+		</form>
+	</body>
+</HTML>
