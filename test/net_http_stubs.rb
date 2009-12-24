@@ -4,6 +4,10 @@ HTDOCS_DIR = File.join(File.dirname(__FILE__), 'htdocs')
 class Net::HTTP
   alias :old_do_start :do_start
 
+  def self.responses
+    @responses ||= []
+  end
+
   def do_start
     @started = true
   end
@@ -24,7 +28,11 @@ class Net::HTTP
                          "#{path.gsub(/[^\/\\.\w_\s]/, '_')}.#{request.method}"
                         )
     puts filename
-    res.body = File.read(filename)
+
+    res.body = self.class.responses.shift
+
+    raise "no body for test: #{request.class::METHOD} #{path.inspect}" unless
+      res.body
 
     res['Content-Type'] ||= 'text/html'
     res['Content-Length'] ||= res.body.length.to_s
