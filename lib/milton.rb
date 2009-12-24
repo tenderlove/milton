@@ -154,9 +154,18 @@ the current week with eight hours/day.
 
   def run config
     @debug = config['debug']
+
     if @debug then
       @agent.log = Logger.new $stderr
       @agent.log.formatter = proc do |s, t, p, m| "#{m}\n" end
+
+      count = 0
+      @agent.post_connect_hooks.push proc { |params|
+        count += 1
+        File.open "#{count}.html", "w" do |f|
+          f.write params[:response_body]
+        end
+      }
     end
 
     self.client_name = config['client_name']
