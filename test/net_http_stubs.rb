@@ -29,14 +29,17 @@ class Net::HTTP
                         )
     puts filename
 
-    res.body = self.class.responses.shift
+    code, location, body = self.class.responses.shift
 
     raise "no body for test: #{request.class::METHOD} #{path.inspect}" unless
-      res.body
+      body
 
+    res.body = body
+    res.code = code
+
+    res["Location"] = location if location
     res['Content-Type'] ||= 'text/html'
     res['Content-Length'] ||= res.body.length.to_s
-    res.code ||= "200"
 
     res.cookies.each do |cookie|
       res.add_field('Set-Cookie', cookie.to_s)

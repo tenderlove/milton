@@ -163,7 +163,10 @@ the current week with eight hours/day.
       @agent.post_connect_hooks.push proc { |params|
         count += 1
         File.open "#{count}.html", "w" do |f|
-          f.write params[:response_body]
+          payload = [params[:response].code,
+                     params[:response]["Location"],
+                     params[:response_body]]
+          Marshal.dump(payload, f)
         end
       }
     end
