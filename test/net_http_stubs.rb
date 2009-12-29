@@ -29,10 +29,10 @@ class Net::HTTP
                         )
     puts filename
 
-    code, location, body = self.class.responses.shift
+    raise "no response for test: #{request.class::METHOD} #{path.inspect}" if
+      self.class.responses.empty?
 
-    raise "no body for test: #{request.class::METHOD} #{path.inspect}" unless
-      body
+    code, location, body = self.class.responses.shift
 
     res.body = body
     res.code = code

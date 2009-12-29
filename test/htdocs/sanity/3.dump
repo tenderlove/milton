@@ -1,4 +1,4 @@
-
+["2000"ÇK
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>
@@ -9,9 +9,9 @@
 		<meta content="C#" name="CODE_LANGUAGE">
 		<meta content="JavaScript" name="vs_defaultClientScript">
 		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
-		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirect.css?17_1' type="text/css" rel="stylesheet">
-		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirectControlClasses.css?17_1' type="text/css" rel="stylesheet">
-		<script language="javascript" src='/ezLaborManagerNetRedirect/js/commonpagefunctions.js?17_1'></script>	
+		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirect.css?17_1_34' type="text/css" rel="stylesheet">
+		<LINK href='/ezLaborManagerNetRedirect/css/ADPezLaborManagerRedirectControlClasses.css?17_1_34' type="text/css" rel="stylesheet">
+		<script language="javascript" src='/ezLaborManagerNetRedirect/js/commonpagefunctions.js?17_1_34'></script>	
 	<script language="javascript">
 	<!--
 		function performOnLoad()
@@ -414,10 +414,10 @@
 		</script>
 	</HEAD>
 	<body onload="performOnLoad()" marginheight="0" marginwidth="0">
-		<form name="ClientLoginForm" method="post" action="clientlogin.aspx" id="ClientLoginForm">
+		<form name="ClientLoginForm" method="post" action="ClientLogin.aspx?lng=en-US" id="ClientLoginForm">
 <input type="hidden" name="__PageDirty" id="__PageDirty" value="False" />
 <input type="hidden" name="__PageDirtyMsg" id="__PageDirtyMsg" value="Are you sure you want to navigate away from this page?\n\nChanges have been made but not saved.\nYour changes will be lost if you continue.\n\nPress OK to continue, or Cancel to stay on the current page." />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DYuSu9LdS3yix4kEanXNWnaOpysB+VoTZq/tV1Wz9nrL5f/jRBBRsPXDlqL9IleHxa6m5r0ynLKZBC1c0acWgxlrTQ9sUpsbLjWbu6q4Yn4Mbsu9f6sIzmYl2Bke2kalDFnkscTkR8i0C0INeopOwyAXzWtvshb0oZW+fO6dShIMLUoZMLUBePz7sYPuHPbFHSTgs2iq0KStlT1C1/tU6w==" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="DYuSu9LdS3yix4kEanXNWnj0snPYH8CrAJJdCgZC2oHdGYOA9wx5BN+vfO5iCSSebFcp2+mDyAIPjpzkcrm64dU6M0VRgnwzLvYQpOnhA/HRPucmWErtwCDtrz/rKqw1LdYmFsTe5F7CnUag/ixuUoQXBd9fvJu4+l4FiiUV8Ra3D9M4XipyS3F92jRe8OMdlx5fp7EgcEtWVwEvlkDzMnyfhY/lv85/untTgQjn4M0=" />
 
 <script language="JavaScript">
 var objAboutWindow;
@@ -456,8 +456,8 @@ return void(0);
 }
 </Script>
 
-<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="x2c9tjaRz05zc4GPXzNPS/Y0EuLRy4Ifa65XtM2ABQ0Jayr47Z2YiDkedQoC3grS" />
-			<input name="hdnTimeZone" type="hidden" id="hdnTimeZone" value="Pacific Standard Time" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="KPi5bIxcw+MaCv+1uwWxoDBONCpXSA14iN2RYN4aVl8T4R7cmLi6NODVL22ViytW" />
+			<input name="hdnTimeZone" type="hidden" id="hdnTimeZone" />
 			<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
 				<tr>
 					<td vAlign="top" height="100%">
@@ -513,7 +513,7 @@ return void(0);
 					<td height="25">
 		<table id="Table22" height="36" cellSpacing="0" cellPadding="0" width="100%" border="0">
 			<tr height="16">
-				<td class="Footer-AppInfoRow" align="center" nowrap colspan="7">12/24/2009 5:24:58 PM&nbsp;v11.017.001.36 - xb&gt;;9g:9e'];_, DPID - sA&gt;yuCnwIA]</td>
+				<td class="Footer-AppInfoRow" align="center" nowrap colspan="7">12/28/2009 6:33:44 PM&nbsp;v11.017.001.36 - xb&lt;;9g:9e'[;_: DPID - sA&lt;yuCnwIA(</td>
 			</tr>
 			<tr height="20">
 				<td class="FooterText" nowrap width="97%">Copyright Â©2002 2009-Automatic Data Processing, Inc.&nbsp;</td>
@@ -542,10 +542,16 @@ return void(0);
 			</table>
 			<br>
 			<br>
-		</form>
-		<form id="LoginForm" method="post" action="https://ezlmportaldc2.adp.com/ezLaborManagerNetRedirect/ClientLogin.aspx?lng=en-US">
+		
+
+<script type="text/javascript">
+//<![CDATA[
+SetFlagAndDomainForPortal();//]]>
+</script>
+</form>
+		<form id="LoginForm" method="post" action="https://ezlmappdc2.adp.com/ezLaborManagerNet/Login/Login.aspx?cID=12824&lng=en-US">
 			
-			<input type="hidden" value="Yellowpages" id="cn" name="cn">
+			<input type="hidden" value="" id="cn" name="cn">
 		</form>
 	</body>
 </HTML>

@@ -1,4 +1,4 @@
-
+["2000"*µ
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>
@@ -19,13 +19,13 @@
 		<script language="javascript" src='/ezLaborManagerNet/js/confirm.js?16_4'></script>
 	</HEAD>
 	<body marginheight="0" marginwidth="0">
-		<form name="Form1" method="post" action="SupervisorServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" id="Form1">
+		<form name="Form1" method="post" action="EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" id="Form1">
 <input type="hidden" name="__PageDirty" value="False" />
 <input type="hidden" name="__PageDirtyMsg" value="Changes have been made but not saved.\nYour changes will be lost if you continue.\n\nDo you wish to continue?" />
 <input type="hidden" name="__EditorInNewMode" value="False" />
 <input type="hidden" name="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" value="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" />
 
 <script language="javascript" type="text/javascript">
 <!--
@@ -45,13 +45,15 @@
 </script>
 <script type="text/javascript" src="/ezLaborManagerNet/ajax/common.ashx"></script>
 
+	<script type="text/javascript" src="/ezLaborManagerNet/ajax/ADP.EZLM.Web.AjaxLib.ClockFunctionProvider,ADP.EZLM.Web.AjaxLib.ashx"></script>
+
 	<script type="text/javascript" src="/ezLaborManagerNet/ajax/ADP.EZLM.Web.AjaxLib.InboxProvider,ADP.EZLM.Web.AjaxLib.ashx"></script>
 
 	<script language="JavaScript">
 var objOptionWindow;
 function OpenOptionsWindow()
 {
-objOptionWindow = window.open('/ezLaborManagerNet/Options/UserEmulation.aspx?sID=26d024614a6946b88d6d1bf5c5b87752','ezLaborManagerOptions','width=700,height=575,resizable=1,status=1,scrollbars=1');
+objOptionWindow = window.open('/ezLaborManagerNet/Options/Options.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4','ezLaborManagerOptions','width=700,height=575,resizable=1,status=1,scrollbars=1');
 objOptionWindow.focus();
 return void(0);
 }
@@ -66,7 +68,7 @@ top.location.reload(true);
 var objReportsWindow;
 function OpenReportsWindow()
 {
-objReportsWindow = window.open('HTTPS://ezlmreportdc2.adp.com/ezLaborManagerNet/Reports/ReportsSupervisor.aspx?sID=26d024614a6946b88d6d1bf5c5b87752','ezLaborManagerReports','');
+objReportsWindow = window.open('HTTPS://ezlmreportdc2.adp.com/ezLaborManagerNet/Reports/ReportsSupervisor.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4','ezLaborManagerReports','');
 objReportsWindow.focus();
 return void(0);
 }
@@ -78,7 +80,7 @@ var thisPage = this.location.pathname;
 var objHelpWindow;
 function OpenHelpWindow(m)
 {
-var strHelpURL;strHelpURL = "/ezLaborManagerNet/Misc/Help.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&helpDir=ss_help&helpMode=" + m + "&ref=" + thisPage
+var strHelpURL;strHelpURL = "/ezLaborManagerNet/Misc/Help.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&helpDir=es_help&helpMode=" + m + "&ref=" + thisPage
 objHelpWindow = window.open(strHelpURL,'ezLaborManagerHelp','width=650,height=575,resizable=1,status=1,scrollbars=1');
 objHelpWindow.focus();
 return void(0);
@@ -87,7 +89,7 @@ return void(0);
 
 
 	<script language="javascript"><!--
-var dtSrvrTime =  new Date( 2009,11,24,14,25,2,0 ); var dtUserPCTime =  new Date(); var intDifference =  dtUserPCTime.getTime() - dtSrvrTime.getTime(); var aDayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); var aMonthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""); var sAMDesignator = 'AM'; var sPMDesignator = 'PM'; var sTimeZone = ''; var sEraName = 'A.D.'; 
+var dtSrvrTime =  new Date( 2009,11,28,16,33,47,0 ); var dtUserPCTime =  new Date(); var intDifference =  dtUserPCTime.getTime() - dtSrvrTime.getTime(); var aDayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"); var aMonthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", ""); var sAMDesignator = 'AM'; var sPMDesignator = 'PM'; var sTimeZone = ''; var sEraName = 'A.D.'; 
 // --></script><script language="javascript" src="/ezLaborManagerNet/js/clock.js?16_4"></script>
 
 	<script language="javascript" type="text/javascript">
@@ -116,13 +118,13 @@ var IB_strHeaderNotUpdated = "{0} messages were not updated because they have be
 var IB_strMsgRefreshInbox = "It has been more than {0} minutes since the Inbox has been refreshed.\nWould you like to Refresh the Inbox Messages now?";
 var IB_strFolderHasNoMessages = "The selected folder no longer has messages.";
 var IB_strSwitchService = "Performing this action will cause the system to switch services.";
-var IB_sID = "26d024614a6946b88d6d1bf5c5b87752";
+var IB_sID = "93e9a56d648c4eb2b068e1e0141caaa4";
 var IB_strImgFolderPath = "/ezLaborManagerNet/images/";
 var IB_intUTCtoLocalTimeDiff = "28800000";
-var IB_strSSvc = "s";
+var IB_strSSvc = "e";
 var IB_strPortalMessageLoc = "3";
 var IB_strNoMessagesSelected = "No messages were selected. \n\nTo select messages, check the corresponding checkbox in each row.";
-var IB_PrefsPageURL = "/ezLaborManagerNet/Common/Inbox/InboxPreferences.aspx?sID=26d024614a6946b88d6d1bf5c5b87752";
+var IB_PrefsPageURL = "/ezLaborManagerNet/Common/Inbox/InboxPreferences.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4";
 var IB_aryMsgTypeLabels = new Array()
 IB_aryMsgTypeLabels["0"] = "Generic Messages"
 IB_aryMsgTypeLabels["1"] = "Labor Charge Approvals"
@@ -148,11 +150,8 @@ var LINKURLPARAMS = new Array()
 LINKURLS["LCF_LINK"] = {a:"/ezLaborManagerNet/AdminServices/MSAApprovals/LaborChargeApprovalSummary.aspx", s:"/ezLaborManagerNet/SupervisorServices/GroupLabor/LaborChargeApprovalSummary.aspx", e:"/ezLaborManagerNet/SupervisorServices/GroupLabor/LaborChargeApprovalSummary.aspx"};
 LINKURLS["REQUEST_LINK"] = {a:"/ezLaborManagerNet/AdminServices/Requests/TimeOffRequest.aspx", s:"/ezLaborManagerNet/SupervisorServices/MyEmployees/Attendance/TimeOffRequest.aspx", e:"/ezLaborManagerNet/EmployeeServices/Attendance/MyTimeOffRequest.aspx"};
 LINKURLPARAMS["REQUEST_LINK"] = "oid=|0|&ovflt=|1|&svc=|2|";
-var IB_aryOrderStr = "3,4,5,2,10,11,15,0";
+var IB_aryOrderStr = "3,5,2,10,0";
 var IB_InboxDataSrc = new Array();
-IB_InboxDataSrc[IB_InboxDataSrc.length] = {MsgID:"53045", MsgType:"2", DeliveryMethod:"0", EventDateTime:"12/14/2009 11:00:16 PM", DueDate:"", Priority:"1", MsgSubject:"Time Off Request 1184 has been Approved and Scheduled", IsRead:"F", IsDeleted:"F"}
-IB_InboxDataSrc[IB_InboxDataSrc.length] = {MsgID:"53940", MsgType:"4", DeliveryMethod:"0", EventDateTime:"12/24/2009 9:37:54 PM", DueDate:"", Priority:"2", MsgSubject:"Timecard Exception Notice", IsRead:"F", IsDeleted:"F"}
-IB_InboxDataSrc[IB_InboxDataSrc.length] = {MsgID:"53049", MsgType:"2", DeliveryMethod:"0", EventDateTime:"12/14/2009 11:01:05 PM", DueDate:"", Priority:"1", MsgSubject:"Time Off Request 1187 has been Approved and Scheduled", IsRead:"F", IsDeleted:"F"}
 
 </script>
 
@@ -181,7 +180,7 @@ IB_InboxDataSrc[IB_InboxDataSrc.length] = {MsgID:"53049", MsgType:"2", DeliveryM
 var objAboutWindow;
 function OpenAboutWindow()
 {
-objAboutWindow = window.open('/ezLaborManagerNet/Misc/About.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752&fID=s','ezLaborManagerOptions','width=550,height=575,resizable=1,status=1,scrollbars=1');
+objAboutWindow = window.open('/ezLaborManagerNet/Misc/About.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4&fID=e','ezLaborManagerOptions','width=550,height=575,resizable=1,status=1,scrollbars=1');
 objAboutWindow.focus();
 return void(0);
 }
@@ -200,13 +199,13 @@ var windowLocation = '';
 var windowParams = '';
 if(wndw == 'p')
 {
-     windowLocation = '/ezLaborManagerNet/Misc/Privacy.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752';
+     windowLocation = '/ezLaborManagerNet/Misc/Privacy.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4';
      windowName = 'ADPPrivacy';
      windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
 }
 else
 {
-     windowLocation = '/ezLaborManagerNet/Misc/Legal.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752';
+     windowLocation = '/ezLaborManagerNet/Misc/Legal.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4';
      windowName = 'ADPLegal';
      windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
 }
@@ -223,21 +222,22 @@ return void(0);
 					function OpenSuggestionWindow()
 					{
 						var winParam = "width=750,height=700,resizable=1,status=1,scrollbars=1";
-						var objWin = window.open("/ezLaborManagerNet/Misc/Suggestions.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752&fID=s", "suggestion", winParam);
+						var objWin = window.open("/ezLaborManagerNet/Misc/Suggestions.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4&fID=e", "suggestion", winParam);
 						objWin.focus();
 					}
 					//-->
 					</script>
 
-	<script language="javascript" src="/ezLaborManagerNet/js/jsXMLParser/compressed/tinyxmlsax.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/jsXMLParser/preMadeSaxEventHandler.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMessageObject.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMessageObjectCollection.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMethodResult.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/InboxProvider.js?16_4"></script>
+	<script language="javascript" src="/ezLaborManagerNet/js/jsXMLParser/compressed/tinyxmlsax.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/jsXMLParser/preMadeSaxEventHandler.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMessageObject.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMessageObjectCollection.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/AjaxMethodResult.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/ClockFunctionProvider.js?16_4"></script><script language="javascript" src="/ezLaborManagerNet/js/AjaxObjects/InboxProvider.js?16_4"></script>
 
 
+			<a id="TOP" name="TOP"></a>
 			<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
 				<tr>
 					<td vAlign="top" height="100%">
 						<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
 							<tr>
-								<td style="HEIGHT: 90px" height="90">
+								<td height="90">
 <table id="Table1" cellSpacing="0" cellPadding="0" width="100%" border="0">
 	<tr id="br1">
 		<td>
@@ -260,7 +260,7 @@ return void(0);
 										</tr>
 										<tr>
 											<td class="WelcomeText" vAlign="top" noWrap><span id="Banner1_lblWelcome" key="lbl_Welcome">Welcome</span>&nbsp;<span class="NameText">
-													<span id="Banner1_lblName">Ryan W&nbsp;Davis</span></span></td>
+													<span id="Banner1_lblName">Aaron J&nbsp;Patterson</span></span></td>
 										</tr>
 										<tr>
 											<td><IMG height="3" src="/ezLaborManagerNet/images/spacer.gif"></td>
@@ -278,7 +278,7 @@ return void(0);
 									<table cellSpacing="0" cellPadding="0" border="0">
 										<tr>
 											<TD style="PADDING-RIGHT:9px">
-												<img id="Banner1_imgReports" key="Reports.gif" title="Reports" onclick="OpenReportsWindow();" src="/ezLaborManagerNet/images/en-US/Reports.gif" alt="" border="0" style="cursor:pointer;" />&nbsp;
+												&nbsp;
 											</TD>
 											<td>
 												<img id="Banner1_imgOptions" key="Options.gif" title="Options" onclick="OpenOptionsWindow();" src="/ezLaborManagerNet/images/en-US/Options.gif" alt="" border="0" style="cursor:pointer;" />&nbsp;
@@ -308,9 +308,8 @@ return void(0);
 								<td align="right" width="100%">
 									<table cellSpacing="0" cellPadding="0" border="0">
 										<tr>
-											<TD vAlign="middle" align="right"><select name="Banner1:ddlServices" id="Banner1_ddlServices" class="ServicesDropdown" onchange="if(!anyChanges()){this.selectedIndex=1; return false;} else {document.location=this.options[this.selectedIndex].value;}">
-	<option selected="selected" value="/ezLaborManagerNet/SupervisorServices/SupervisorServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Supervisor Services</option>
-	<option value="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Employee Services</option>
+											<TD vAlign="middle" align="right"><select name="Banner1:ddlServices" id="Banner1_ddlServices" class="ServicesDropdown" onchange="if(!anyChanges()){this.selectedIndex=2; return false;} else {document.location=this.options[this.selectedIndex].value;}">
+	<option selected="selected" value="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4">Employee Services</option>
 
 </select></TD>
 											<td>&nbsp;</td>
@@ -331,9 +330,9 @@ return void(0);
 				<tr>
 					<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-		<td class="ActionButtonsTabSelectedRed" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/SupervisorServices/SupervisorServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_0"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/1st_left_selected_tabRed.gif" /><span class="TabLabel">Home</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab_selected_tabRed.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/SupervisorServices/GroupLaborMain.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_1"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">Group Labor</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/SupervisorServices/SchedulesMain.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_2"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">Schedules</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/SupervisorServices/MyEmployees/TimecardMain.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_3"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Employees</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td background="/ezLaborManagerNet/images/tabs/GreyBlackLine.gif" width="99%"></td>
+		<td class="ActionButtonsTabSelectedRed" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_0"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/1st_left_selected_tabRed.gif" /><span class="TabLabel">Home</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab_selected_tabRed.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyLabor.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_1"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Labor</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/Attendance/AttendanceNotifications.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&amp;sDt=2009-12-21&amp;eDt=2009-12-28" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_2"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Attendance</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyBenefits.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_3"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Benefits</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyInformation.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_4"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Information</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td background="/ezLaborManagerNet/images/tabs/GreyBlackLine.gif" width="99%"></td>
 	</tr>
-</table><span id="Banner1_tabControl" key="tab_SupervisorServices"></span></td>
+</table><span id="Banner1_tabControl" key="tab_EmployeeServices"></span></td>
 				</tr>
 			</table>
 		</td>
@@ -345,15 +344,251 @@ return void(0);
 							</tr>
 							<tr>
 								<td class="MainContentCell" vAlign="top" height="100%">
-									<div class="SectionDivider"></div>
-									<b>
-										<input id="clkGlobalizedClock" type="text" readonly="" value="Thursday, December 24, 2009 02:25 PM" size="41" style="FONT-WEIGHT: bold; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none;" /><script language="javascript"><!--
+									<div class="SectionDivider" style="MARGIN-TOP: 4px; MARGIN-BOTTOM: 4px">
+										<b>
+											<input id="clkGlobalizedClock" type="text" readonly="" value="Monday, December 28, 2009 04:33 PM" size="39" style="FONT-WEIGHT: bold; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none;" /><script language="javascript"><!--
 new Clock('clkGlobalizedClock', new Array("dddd", ",", " ", "MMMM", " ", "dd", ",", " ", "yyyy", " ", "hh", ":", "mm", " ", "tt"), 1000);
-//--></script></b>
-									<br>
+//--></script></b><span style="WIDTH: 36px">&nbsp;</span><a id="hypToInbox" key="por_Inbox" OnClick="event.cancelBubble=true;" href="#IB">Inbox</a>&nbsp;
+										<span id="InboxLinkCount">(0)</span> <span style="WIDTH: 36px">&nbsp;</span><a id="hypToSchedAtAGlance" key="por_ScheduleAtAGlance" OnClick="event.cancelBubble=true;" href="#SAG">Schedule at a Glance</a></div>
+									<div class="SectionDivider" style="MARGIN-TOP: 4px; MARGIN-BOTTOM: 4px">
+										</div>
 									
-									<div class="SectionDivider"></div>
-									<!-- Portlet-Outlined Start -->
+<!-- Portlet-Outlined Start -->
+<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+		<td class="Portlet-Outlined-HeaderCell">
+			<table cellSpacing="0" cellPadding="2" width="100%" border="0">
+				<tr class="Portlet-Outlined-HeaderContent">
+					<td><span id="UCTodaysActivities_porActivities" key="por_Activities">Today's Activities</span></td>
+					<td align="right">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="Portlet-Outlined-BodyCell">
+			<table cellSpacing="0" cellPadding="2" width="100%" border="0">
+				<tr>
+					<td>
+						<div class="SectionDivider" style="MARGIN-TOP: 1px; MARGIN-BOTTOM: 1px">&nbsp;</div>
+						<div id="litMsg"></div>
+						<div id="divlitmessage"></div>
+						<br>
+						<div class="ButtonContainer" style="MARGIN-TOP: 4px; TEXT-ALIGN: center">
+							
+							
+							
+							<a id="UCTodaysActivities_lnkTimeSheet" class="lnkBtnOff" key="btn_TimeSheet" onMouseOver="swLnkBtn(this, 1);" onMouseOut="swLnkBtn(this, 0);" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/EmployeeServices/TimeEntry/EmployeeTimeSheet.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&amp;icdr=T" style="MARGIN-RIGHT:4px">Time Sheet</a>
+							<div class="HiddenItem" id="sd1" style="MARGIN-TOP: 8px; MARGIN-BOTTOM: 8px">&nbsp;</div>
+							&nbsp;
+							<div class="SectionDivider" id="sd2" style="MARGIN-TOP: 8px; MARGIN-BOTTOM: 8px">&nbsp;</div>
+							
+							
+							<a id="UCTodaysActivities_lnkRequestTimeOff" class="lnkBtnOff" key="btn_RequestTimeOff" onMouseOver="swLnkBtn(this, 1);" onMouseOut="swLnkBtn(this, 0);" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/EmployeeServices/Attendance/MyTimeOffRequest.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" style="MARGIN-RIGHT:4px">Request Time Off</a></div>
+						<div class="SectionDivider" style="MARGIN-TOP: 4px; MARGIN-BOTTOM: 4px">&nbsp;</div>
+						<div class="SectionDivider-Line" style="MARGIN-TOP: 4px; MARGIN-BOTTOM: 4px">&nbsp;</div>
+						<div id="divActivities"></div>
+						<table class="VisibleItem" id="rptTable" cellSpacing="0" cellPadding="4" width="100%" border="0">
+							<tr>
+								<td><div class="InfoText">No Activities</div></td>
+							</tr>
+						</table>
+						<div id="divhypTimeCardApproval"></div>
+						<div id="hypTCApproval"></div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<script language="javascript" type="text/javascript">
+
+//Log#: 051735
+var intCharLength = 0;
+var strEvtType = "";
+var btnAry = new Array("lnkClockIn", "lnkClockOut", "lnkLunchOut", "lnkTransfer", "lnkTimeSheet", "lnkSupplementalEarnings");
+for(i=0; i<btnAry.length; i++)
+{
+	var btn = document.getElementById("UCTodaysActivities_" + btnAry[i]);
+		if(btn)
+		{
+			intCharLength += btn.innerHTML.length;
+			
+		}
+}
+if(intCharLength > 80)
+{
+	document.getElementById("sd1").className = "SectionDivider";
+	document.getElementById("sd2").className = "HiddenItem";
+}
+//This function is called once the call to the server returns.
+function Employee_CallBack(response)
+{
+	document.getElementById("rptTable").className = "HiddenItem";
+	
+	var ActDiv = document.getElementById("divActivities");
+	var objAxActMR = new AjaxActivityMethodResult();
+	var ActCount = 0;
+	var strTimeCardApprovalFlag = "F";	
+	
+	objAxActMR.populateFromXml(response.value);
+	
+	if (strEvtType == "IN")
+	{
+		UCTodaysActivities_lnkClockIn.disabled = false;
+	}
+	else if (strEvtType == "OUT")
+	{
+		UCTodaysActivities_lnkClockOut.disabled = false;
+	}
+	else if (strEvtType == "LUNCH")
+	{
+		UCTodaysActivities_lnkLunchOut.disabled = false;
+	}
+	
+	if (objAxActMR.status == "0")
+	{
+		if (strEvtType == "IN")
+		{
+			DisplayMessage("StatusMessage",'Clock In Successful.');
+		}
+		else if (strEvtType == "OUT")
+		{
+			DisplayMessage("StatusMessage",'Clock Out Successful.');
+		}
+		else if (strEvtType == "LUNCH")
+		{
+			DisplayMessage("StatusMessage",'Lunch Out Successful');
+		}
+		
+		if (objAxActMR.colEvt.size() > 0)
+		{						
+			var strTable = "<table cellSpacing=\"0\" cellPadding=\"4\" width=\"100%\" border=\"0\">";
+			
+			strTimeCardApprovalFlag = objAxActMR.TimeCardAppFlag;
+			
+			for(ActCount = 0; ActCount < objAxActMR.colEvt.size(); ActCount++)
+			{
+				if (ActCount % 2 == 0)
+				{
+					strTable = strTable + "<tr class=DataTable-BodyRow-Odd>"; 	
+				}
+				else
+				{
+					strTable = strTable + "<tr class=DataTable-BodyRow-Even>"; 
+				}
+				
+				strTable = strTable + "<td>" + objAxActMR.colEvt.get(ActCount).EvtDesc + "</td>";
+				strTable = strTable + "<td>" + objAxActMR.colEvt.get(ActCount).EvtTime + "</td>";
+				
+				if  (objAxActMR.colEvt.get(ActCount).TimeDesc != null)
+				{
+					strTable = strTable + "<td>" + objAxActMR.colEvt.get(ActCount).TimeDesc + "</td>";
+				}
+				else
+				{
+					strTable = strTable + "<td></td>";
+				}
+				
+				strTable = strTable + "</tr>"; 
+			}
+			
+			strTable = strTable + "</table>";
+			
+			document.getElementById("divActivities").className = "";
+			document.getElementById("divActivities").innerHTML = strTable;
+			
+			if (strTimeCardApprovalFlag == 'R')
+			{
+				if (document.getElementById("UCTodaysActivities_hypTimeCardApproval") == null)
+				{
+					document.getElementById("divhypTimeCardApproval").className = "HiddenItem";
+					document.getElementById("hypTCApproval").innerHTML = "<a href=" + '/ezLaborManagerNet/EmployeeServices/Labor/TimecardApproval.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&eid=1000002506&tcCurrState=C' + ">" + 
+												'Timecard Approval Has Been Cleared' + "</a>";
+				}
+			}
+			else
+			{
+				document.getElementById("divhypTimeCardApproval").className = "HiddenItem";
+				document.getElementById("hypTCApproval").innerHTML = "";
+			}
+			
+		}
+		else
+		{
+			document.getElementById("divActivities").className = "InfoText";
+			document.getElementById("divActivities").innerHTML = 'No Activities';
+		}
+	}
+	else
+	{
+		DisplayMessage("ErrorText", objAxActMR.message);
+	}	
+}
+
+
+//Displays successful message or error message.
+function DisplayMessage(strclassname, strMessage)
+{
+	document.getElementById("divlitmessage").className = strclassname;
+	document.getElementById("divlitmessage").innerHTML = strMessage;
+
+}
+
+function ClockEmp(timeEvtType)
+{
+	var strConfirm = "";
+	strEvtType = timeEvtType;
+	
+	if (timeEvtType == "IN")
+	{
+		strConfirm = 'Click OK to Clock In.' 
+	}
+	else if (timeEvtType == "OUT")
+	{
+		strConfirm = 'Click OK to Clock Out.' 
+	}
+	else if (timeEvtType == "LUNCH")
+	{
+		strConfirm = 'Click OK to Lunch Out.' 
+	}
+	
+	var blnconfirm = confirm(strConfirm);
+	
+	if (blnconfirm)
+	{
+		document.getElementById("litMsg").innerHTML = "";
+		
+		ClockAction.SessionID = "93e9a56d648c4eb2b068e1e0141caaa4";
+		
+		if (timeEvtType == "IN")
+		{
+			UCTodaysActivities_lnkClockIn.disabled = true;
+			ClockAction.ClockFunction = "IN";
+		}
+		else if(timeEvtType == "OUT")
+		{
+			UCTodaysActivities_lnkClockOut.disabled = true;
+			ClockAction.ClockFunction = "OUT";
+		}
+		else if(timeEvtType == "LUNCH")
+		{
+			UCTodaysActivities_lnkLunchOut.disabled = true;
+			ClockAction.ClockFunction = "LUNCH";
+		}
+		
+		//calls the sever function response returns to Employee_Callback function
+		ClockFunctionProvider.PerformClockFunction(ClockAction.prototype.toXmlString(), Employee_CallBack);	
+	}	
+	return false;
+}
+
+</script>
+
+									<div class="SectionDivider" style="MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px">&nbsp;</div>
+									<a id="hypToTop1" key="hyp_Top" OnClick="event.cancelBubble=true;" href="#TOP">To Top</a>
+									<div class="SectionDivider" style="MARGIN-TOP: 6px; MARGIN-BOTTOM: 6px">&nbsp;</div>
+									<a id="IB" name="IB"></a>
 									
 <LINK href='/ezLaborManagerNet/css/ADPezLaborManagerInbox.css?16' type="text/css" rel="stylesheet">
 <script language="javascript" src='/ezLaborManagerNet/js/jsXMLParser/compressed/tinyxmlsax.js?16_4'></script>
@@ -381,7 +616,7 @@ var blnSubjectPaneActive = false;
 				<tr class="Portlet-Outlined-HeaderContent">
 					<td><span id="UCInbox_lblInbox" key="por_Inbox">Inbox</span></td>
 					<td align="right">
-						<a class="Portlet-Outlined-Headerlink" key="hyp_AttendanceNotificationHistory" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/SupervisorServices/Home/AttendanceNotifications.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&amp;sDt=2009-12-24&amp;eDt=2009-12-25">View Attendance Notifications</a>&nbsp;</td>
+						<a class="Portlet-Outlined-Headerlink" key="hyp_ViewMyAttendanceNotifications" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/EmployeeServices/Attendance/AttendanceNotifications.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&amp;cpg=Home&amp;sDt=2009-12-21&amp;eDt=2009-12-28&amp;selID=NoMenu">View My Attendance Notifications</a>&nbsp;</td>
 				</tr>
 			</table>
 		</td>
@@ -543,54 +778,48 @@ function HighlightPortalMessages()
 setTimeout("HighlightPortalMessages()", 100) 
 </script>
 
-									<div class="SectionDivider">&nbsp;</div>
+									<div class="SectionDivider" style="MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px">&nbsp;</div>
+									<a id="hypToTop2" key="hyp_Top" OnClick="event.cancelBubble=true;" href="#TOP">To Top</a>
+									<div class="SectionDivider" style="MARGIN-TOP: 6px; MARGIN-BOTTOM: 6px">&nbsp;</div>
+									<a id="SAG" name="SAG"></a>
 									<table cellSpacing="0" cellPadding="0" width="100%">
-										<tr>
-											<td vAlign="top" width="50%">
+										<TBODY>
+											<tr>
+												<td>
+													
 <!-- Portlet-Outlined Start -->
-<table cellSpacing="0" cellPadding="0" width="99%" border="0">
-	<TBODY>
-		<tr>
-			<td class="Portlet-Outlined-HeaderCell">
-				<table cellSpacing="0" cellPadding="2" width="100%" border="0">
-					<tr class="Portlet-Outlined-HeaderContent">
-						<td><span id="UCExByEmp_lblExceptionsByEmployee" key="por_ExceptionsByEmployee">Exceptions by Employee</span></td>
-						<td align="right"><a id="UCExByEmp_hypViewByType" class="Portlet-Outlined-Headerlink" key="hyp_ViewByType" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/SupervisorServices/Exceptions/ExceptionsByType.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">View By Type</a>&nbsp;</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-		<tr>
-			<td class="Portlet-Outlined-BodyCell">
-				<table class="DataTable-ShellTable" cellSpacing="0" cellPadding="0" width="100%" border="0">
-					<TBODY>
-						<tr>
-							<td>
-								
-								<table id="UCExByEmp_ExceptionsTable" cellspacing="1" cellpadding="4" border="0" width="100%">
-	<tr class="DataTable-BodyRow-Odd">
-		<td align="Right" width="5%"><span>2</span></td><td><a key="lbl_EmpInCurrPayPeriod" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/SupervisorServices/Exceptions/ExceptionsByEmp.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&amp;period=C">Employees in Current Pay Period</a></td>
-	</tr><tr class="DataTable-BodyRow-Even">
-		<td align="Right" width="5%"><span>2</span></td><td><a key="lbl_EmpInNextPayPeriod" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/SupervisorServices/Exceptions/ExceptionsByEmp.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&amp;period=N">Employees in Next Pay Period</a></td>
+<table cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+		<td class="Portlet-Outlined-HeaderCell">
+			<table cellSpacing="0" cellPadding="2" width="100%" border="0">
+				<tr class="Portlet-Outlined-HeaderContent">
+					<td><span id="UCScheduleAtAGlance_lblScheduleAtAGlance" key="por_ScheduleAtAGlance">Schedule at a Glance</span></td>
+					<td align="right"><a id="UCScheduleAtAGlance_hypViewSchedule" class="Portlet-Outlined-Headerlink" key="hyp_ViewSchedule" OnClick="event.cancelBubble=true;" href="/ezLaborManagerNet/EmployeeServices/Home/WeeklySchedule.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4">View Schedule</a>&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td class="Portlet-Outlined-BodyCell">
+			<table cellSpacing="0" cellPadding="2" width="100%" border="0">
+				<tr>
+					<td>
+						<!-- Content Start -->
+						
+						<div class="InfoText">You have no schedule between Monday, December 28, 2009 and Monday, January 04, 2010.</div>
+						<!-- Content End --></td>
+				</tr>
+			</table>
+		</td>
 	</tr>
 </table>
-							</td>
-						</tr>
-					</TBODY>
-				</table>
-			</td>
-		</tr>
-	</TBODY>
-</table> <!-- Portlet-Outlined End -->
+<!-- Portlet-Outlined End -->
 </td>
-											<td vAlign="top" width="50%">
-												
-											</td>
-										</tr>
+											</tr>
+										</TBODY>
 									</table>
-									<!-- Section Divider Start -->
-									<div class="SectionDivider">&nbsp;</div>
-									<!-- Section Divider End --></td>
+									<div class="SectionDivider" style="MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px">&nbsp;</div>
+									<a id="hypToTop3" key="hyp_Top" OnClick="event.cancelBubble=true;" href="#TOP">To Top</a></A></td>
 							</tr>
 						</table>
 					</td>
@@ -599,7 +828,7 @@ setTimeout("HighlightPortalMessages()", 100)
 					<td height="25">
 <table id="Table22" height="36" cellSpacing="0" cellPadding="0" width="100%" border="0">
 	<tr class="Footer-AppInfoRow" height="16">
-		<td align="center" nowrap colspan="2">12/24/2009 04:25:02 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{; ezlmportal4.adp.com - ezlmportal4.adp.com DPID - sA&lt;yuCnwIA*</td>
+		<td align="center" nowrap colspan="2">12/28/2009 06:33:46 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{} ezlmportal4.adp.com - ezlmportal4.adp.com DPID - sA&lt;yuCnwIA&amp;</td>
 	</tr>
 	<tr height="20">
 		<td class="FooterText" noWrap width="99%">Copyright Â©2000-2009 Automatic Data Processing, Inc. All Rights Reserved.&nbsp;</td>
@@ -620,20 +849,9 @@ setTimeout("HighlightPortalMessages()", 100)
 		</td>
 	</tr>
 </table>
-
-					</td>
+</td>
 				</tr>
 			</table>
-		<script language="JavaScript" type="text/javascript">
-aryTables[aryTables.length]="UCExByEmp_ExceptionsTable";
-</Script>
-
-
-	<script language="JavaScript" type="text/javascript">
-aryTables[aryTables.length]="UCEmpCountUnAppTC_EmpExceptionsTable";
-</Script>
-
-
-</form>
+		</form>
 	</body>
 </HTML>

@@ -1,5 +1,5 @@
-<html><head><title>Object moved</title></head><body>
-<h2>Object moved to <a href='/ezLaborManagerNet/SupervisorServices/SupervisorServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752'>here</a>.</h2>
+["302"h/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4"4%<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href='/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4'>here</a>.</h2>
 </body></html>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
@@ -209,7 +209,7 @@ return void(0);
 							<tr>
 								
 								<td valign="top" height="100%">
-									<div class="ErrorText">ezLaborManager does not support the browser version you are using. Most current versions of Internet Explorer and Firefox are supported, but very new or "beta" versions may not be supported.<br>Please contact your system administrator for assistance.<br><br>The browser version you are using is: <br>Unknown WWW-Mechanize/0.9.3 (http://rubyforge.org/projects/mechanize/)</div>
+									<div class="ErrorText">ezLaborManager does not support the browser version you are using. Most current versions of Internet Explorer and Firefox are supported, but very new or "beta" versions may not be supported.<br>Please contact your system administrator for assistance.<br><br>The browser version you are using is: <br>Unknown WWW-Mechanize/0.9.2 (http://rubyforge.org/projects/mechanize/)</div>
 								</td>
 								
 							</tr>
@@ -220,7 +220,7 @@ return void(0);
 					<td height="25">
 <table id="Table22" height="36" cellSpacing="0" cellPadding="0" width="100%" border="0">
 	<tr class="Footer-AppInfoRow" height="16">
-		<td align="center" nowrap colspan="2">12/24/2009 04:25:01 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{; ezlmportal4.adp.com - undefined DPID - sA&lt;yuCnwIA*</td>
+		<td align="center" nowrap colspan="2">12/28/2009 06:33:46 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{} ezlmportal4.adp.com - undefined DPID - sA&lt;yuCnwIA&amp;</td>
 	</tr>
 	<tr height="20">
 		<td class="FooterText" noWrap width="99%">Copyright ©2000-2009 Automatic Data Processing, Inc. All Rights Reserved.&nbsp;</td>

@@ -1,4 +1,4 @@
-
+["2000",×
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
 <HTML>
 	<HEAD>
@@ -18,7 +18,7 @@
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 	</HEAD>
 	<body marginwidth="0" marginheight="0" MS_POSITIONING="FlowLayout">
-		<form name="Form1" method="post" action="EmployeeTimeSheet.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&amp;icdr=T" id="Form1">
+		<form name="Form1" method="post" action="EmployeeTimeSheet.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&amp;icdr=T" id="Form1">
 <input type="hidden" name="TG_FieldLabels" value="Employee ID|Date In|Time In|Time Out|Hours|Out Type|Earnings Code|Department|Project|TimeZone" />
 <input type="hidden" name="TG_FieldNames" value="EMPLOYEEID|INTIMEdt|INTIMEtm|OUTTIMEtm|TOTALHOURS|OUTTYPE|PAYCODEID|DEPARTMENTID|LCF5|LOCATIONID" />
 <input type="hidden" name="__EditorInNewMode" value="False" />
@@ -33,7 +33,7 @@
 <input type="hidden" name="hidNotes2ZoomFieldID" value="" />
 <input type="hidden" name="hidNotesZoomFieldID" value="" />
 <input type="hidden" name="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" value="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" />
 
 <script language="javascript" type="text/javascript">
 <!--
@@ -67,7 +67,7 @@ return ( ADPDateRangeSelector_validateRange('ctrlDtRangeSelector_BeginDate','ctr
 var objOptionWindow;
 function OpenOptionsWindow()
 {
-objOptionWindow = window.open('/ezLaborManagerNet/Options/UserEmulation.aspx?sID=26d024614a6946b88d6d1bf5c5b87752','ezLaborManagerOptions','width=700,height=575,resizable=1,status=1,scrollbars=1');
+objOptionWindow = window.open('/ezLaborManagerNet/Options/Options.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4','ezLaborManagerOptions','width=700,height=575,resizable=1,status=1,scrollbars=1');
 objOptionWindow.focus();
 return void(0);
 }
@@ -82,7 +82,7 @@ top.location.reload(true);
 var objReportsWindow;
 function OpenReportsWindow()
 {
-objReportsWindow = window.open('HTTPS://ezlmreportdc2.adp.com/ezLaborManagerNet/Reports/ReportsSupervisor.aspx?sID=26d024614a6946b88d6d1bf5c5b87752','ezLaborManagerReports','');
+objReportsWindow = window.open('HTTPS://ezlmreportdc2.adp.com/ezLaborManagerNet/Reports/ReportsSupervisor.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4','ezLaborManagerReports','');
 objReportsWindow.focus();
 return void(0);
 }
@@ -94,7 +94,7 @@ var thisPage = this.location.pathname;
 var objHelpWindow;
 function OpenHelpWindow(m)
 {
-var strHelpURL;strHelpURL = "/ezLaborManagerNet/Misc/Help.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&helpDir=ss_help&helpMode=" + m + "&ref=" + thisPage
+var strHelpURL;strHelpURL = "/ezLaborManagerNet/Misc/Help.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&helpDir=es_help&helpMode=" + m + "&ref=" + thisPage
 objHelpWindow = window.open(strHelpURL,'ezLaborManagerHelp','width=650,height=575,resizable=1,status=1,scrollbars=1');
 objHelpWindow.focus();
 return void(0);
@@ -155,7 +155,7 @@ alrtNotValidDate="\"{0}\" is not a valid calendar date.\nPlease correct the date
 	
 				<script language="javascript">
 				<!--
-				var g_noteZoomSID = '26d024614a6946b88d6d1bf5c5b87752';
+				var g_noteZoomSID = '93e9a56d648c4eb2b068e1e0141caaa4';
 				var g_callBackFunc = 'doNotesSelectTCMS';
 				var g_callBackFuncClose = 'onNotesClose';
 				var g_msgNotesBlank = "(Note is Blank)";
@@ -203,7 +203,7 @@ aIcons["AddSm.gif"] = "Insert row for this date";
 var sCustID = "12824";
 var iSvc = 2;
 var sUserControlID = "TG";
-var sSID = "26d024614a6946b88d6d1bf5c5b87752";
+var sSID = "93e9a56d648c4eb2b068e1e0141caaa4";
 var sContentTableID = "TG_TCMGridTable";
 var sSubmitBtnID = "btnSubmit";
 var sSubmitCalcBtnID = "";
@@ -240,15 +240,15 @@ var smitmClearOnInsert = "Clear on insert";
 var smitmDontClearOnInsert = "Do not clear on insert";
 var strTimeInputError = "{0} is not a valid time.\nPlease correct the time before continuing.\nThe time must be entered in the format: {1}";
 var smsgNoteWindowOpen = "Please close the Notes window before submitting.";
-var sLinkTPInfo = "/ezLaborManagerNet/EmployeeServices/TimeEntry/TimePairDetailInfo.aspx?sID=26d024614a6946b88d6d1bf5c5b87752";
-var sMSACurEmployeeID = "%2fP%2bZLE2AV4xW1%2fef67Ap6Q%3d%3d";
+var sLinkTPInfo = "/ezLaborManagerNet/EmployeeServices/TimeEntry/TimePairDetailInfo.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4";
+var sMSACurEmployeeID = "%2fP%2bZLE2AV4wH28PPZFyDwA%3d%3d";
 var sPayPeriod = "YtzNvNrSpmY%3d";
-var sCurEmployeeID = "1000002509";
-var aNewRowDates = new Array(['12/28/2009'],['12/29/2009'],['12/30/2009'],['12/31/2009'],['01/02/2010'],['01/03/2010'],['01/04/2010'],['01/05/2010'],['01/06/2010'],['01/07/2010'],['01/08/2010'],['01/09/2010'],['01/10/2010']);
-var sLinkPaySum = "/ezLaborManagerNet/EmployeeServices/TimeEntry/PayrollSummary.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&eid=1000002509&sDt=2009-12-28&eDt=2010-01-10";
-var sLink = "/ezLaborManagerNet/EmployeeServices/TimeEntry/TimecardReport.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&eid=1000002509&sDt=2009-12-28&eDt=2010-01-10&dtSel=NextPayCycle";
+var sCurEmployeeID = "1000002506";
+var aNewRowDates = new Array(['12/19/2009'],['12/20/2009'],['12/26/2009'],['12/27/2009']);
+var sLinkPaySum = "/ezLaborManagerNet/EmployeeServices/TimeEntry/PayrollSummary.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&eid=1000002506&sDt=2009-12-14&eDt=2009-12-27";
+var sLink = "/ezLaborManagerNet/EmployeeServices/TimeEntry/TimecardReport.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&eid=1000002506&sDt=2009-12-14&eDt=2009-12-27&dtSel=CurrentPayCycle";
 var sLinkAltView = "";
-var sLinkTCMSAStatus = "/ezLaborManagerNet/TimeEntry/TCMSAStatusInfo.aspx?sID=26d024614a6946b88d6d1bf5c5b87752";
+var sLinkTCMSAStatus = "/ezLaborManagerNet/TimeEntry/TCMSAStatusInfo.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4";
 
 </script>
 
@@ -260,7 +260,7 @@ var sLinkTCMSAStatus = "/ezLaborManagerNet/TimeEntry/TCMSAStatusInfo.aspx?sID=26
 <script language="javascript" src="/ezLaborManagerNet/js/TimecardManagerTable.js?16_4"></script>
 <script languagage="javascript">
 var sMsgNoParent = "Please first enter a {0}";
-TCMS.Glbls = {enmET:0, enmSS:2, enmUIMode:0, blnELE:false, blnSAD:false, blnReadOnly:false, strLoanLCFID:"0", strEmployeID:"1000002509", strCalendarToolTip:"Select Date", strSelectToolTip:"Select", blnHrsType:false, strTotalsLabel:"Total Hours:"}
+TCMS.Glbls = {enmET:0, enmSS:2, enmUIMode:0, blnELE:false, blnSAD:false, blnReadOnly:false, strLoanLCFID:"0", strEmployeID:"1000002506", strCalendarToolTip:"Select Date", strSelectToolTip:"Select", blnHrsType:false, strTotalsLabel:"Total Hours:"}
 TCMS.TPStateImageToolTip = {A:"Payroll Adjustment", E:"Processed with Errors", P:"Processed without Errors", W:"Processed with Warnings", U:"Unprocessed", X:"Unexpected Time Pair State"}
 TCMS.AdvEditModeStrings = new Array()
 TCMS.AdvEditModeStrings["Insert"] = "Insert Time";
@@ -299,34 +299,34 @@ TCMS.oVarFldItems.push({intID:0, strLabel:"Earnings Code", strLCFType:"", blnIsH
 TCMS.oVarFldItems.push({intID:16, strLabel:"Department", strLCFType:"F", blnIsHidden:false, intMaxLength:25, strZoomType:"LCF", intParentID:0, blnEnforceAccessability:false})
 TCMS.oVarFldItems.push({intID:5, strLabel:"Project", strLCFType:"F", blnIsHidden:false, intMaxLength:25, strZoomType:"LCF", intParentID:0, blnEnforceAccessability:false})
 TCMS.oVarFldItems.push({intID:18, strLabel:"TimeZone", strLCFType:"F", blnIsHidden:true, intMaxLength:25, strZoomType:"LCF", intParentID:0, blnEnforceAccessability:false})
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f28%2f2009%2012%3a00%3a00%20AM", ["12%2f28%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f28%2f2009%2012%3a00%3a00%20AM", ["12%2f28%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f29%2f2009%2012%3a00%3a00%20AM", ["12%2f29%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f29%2f2009%2012%3a00%3a00%20AM", ["12%2f29%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f30%2f2009%2012%3a00%3a00%20AM", ["12%2f30%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f30%2f2009%2012%3a00%3a00%20AM", ["12%2f30%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f31%2f2009%2012%3a00%3a00%20AM", ["12%2f31%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f31%2f2009%2012%3a00%3a00%20AM", ["12%2f31%2f2009", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([2998074, "", false, false, false, false, false, "01%2f01%2f2010%2012%3a00%3a00%20AM", ["01%2f01%2f2010", "12%3a00%20AM"], "", "08%3a00%20AM", 8, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "HOL", "", "", "", "", "", "", "N", "W", 0, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f01%2f2010%2012%3a00%3a00%20AM", ["01%2f01%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f02%2f2010%2012%3a00%3a00%20AM", ["01%2f02%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f02%2f2010%2012%3a00%3a00%20AM", ["01%2f02%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f03%2f2010%2012%3a00%3a00%20AM", ["01%2f03%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f03%2f2010%2012%3a00%3a00%20AM", ["01%2f03%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f04%2f2010%2012%3a00%3a00%20AM", ["01%2f04%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f04%2f2010%2012%3a00%3a00%20AM", ["01%2f04%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f05%2f2010%2012%3a00%3a00%20AM", ["01%2f05%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f05%2f2010%2012%3a00%3a00%20AM", ["01%2f05%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f06%2f2010%2012%3a00%3a00%20AM", ["01%2f06%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f06%2f2010%2012%3a00%3a00%20AM", ["01%2f06%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f07%2f2010%2012%3a00%3a00%20AM", ["01%2f07%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f07%2f2010%2012%3a00%3a00%20AM", ["01%2f07%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f08%2f2010%2012%3a00%3a00%20AM", ["01%2f08%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f08%2f2010%2012%3a00%3a00%20AM", ["01%2f08%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f09%2f2010%2012%3a00%3a00%20AM", ["01%2f09%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f09%2f2010%2012%3a00%3a00%20AM", ["01%2f09%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f10%2f2010%2012%3a00%3a00%20AM", ["01%2f10%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
-TCMS.oTD.push([0, "", false, false, false, false, false, "01%2f10%2f2010%2012%3a00%3a00%20AM", ["01%2f10%2f2010", ""], "", "", 0, "", "302500", "1000002509", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])</script>
+TCMS.oTD.push([3002247, "", false, false, false, false, false, "12%2f14%2f2009%2012%3a00%3a00%20AM", ["12%2f14%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002246, "", false, false, false, false, false, "12%2f14%2f2009%2012%3a00%3a00%20AM", ["12%2f14%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002249, "", false, false, false, false, false, "12%2f15%2f2009%2012%3a00%3a00%20AM", ["12%2f15%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002248, "", false, false, false, false, false, "12%2f15%2f2009%2012%3a00%3a00%20AM", ["12%2f15%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002251, "", false, false, false, false, false, "12%2f16%2f2009%2012%3a00%3a00%20AM", ["12%2f16%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002250, "", false, false, false, false, false, "12%2f16%2f2009%2012%3a00%3a00%20AM", ["12%2f16%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002253, "", false, false, false, false, false, "12%2f17%2f2009%2012%3a00%3a00%20AM", ["12%2f17%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "PTO", "", "", "", "", "", "", "C", "W", 0, "", 3, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002252, "", false, false, false, false, false, "12%2f17%2f2009%2012%3a00%3a00%20AM", ["12%2f17%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "PTO", "", "", "", "", "", "", "C", "W", 0, "", 3, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002255, "", false, false, false, false, false, "12%2f18%2f2009%2012%3a00%3a00%20AM", ["12%2f18%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3002254, "", false, false, false, false, false, "12%2f18%2f2009%2012%3a00%3a00%20AM", ["12%2f18%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f19%2f2009%2012%3a00%3a00%20AM", ["12%2f19%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f19%2f2009%2012%3a00%3a00%20AM", ["12%2f19%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f20%2f2009%2012%3a00%3a00%20AM", ["12%2f20%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f20%2f2009%2012%3a00%3a00%20AM", ["12%2f20%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
+TCMS.oTD.push([3006344, "", false, false, false, false, false, "12%2f21%2f2009%2012%3a00%3a00%20AM", ["12%2f21%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006343, "", false, false, false, false, false, "12%2f21%2f2009%2012%3a00%3a00%20AM", ["12%2f21%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006346, "", false, false, false, false, false, "12%2f22%2f2009%2012%3a00%3a00%20AM", ["12%2f22%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006345, "", false, false, false, false, false, "12%2f22%2f2009%2012%3a00%3a00%20AM", ["12%2f22%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006348, "", false, false, false, false, false, "12%2f23%2f2009%2012%3a00%3a00%20AM", ["12%2f23%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006347, "", false, false, false, false, false, "12%2f23%2f2009%2012%3a00%3a00%20AM", ["12%2f23%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006350, "", false, false, false, false, false, "12%2f24%2f2009%2012%3a00%3a00%20AM", ["12%2f24%2f2009", "08%3a30%20AM"], "IN", "12%3a00%20PM", 3.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3006349, "", false, false, false, false, false, "12%2f24%2f2009%2012%3a00%3a00%20AM", ["12%2f24%2f2009", "12%3a30%20PM"], "IN", "05%3a00%20PM", 4.5, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "C", "W", 0, "", 1, false, false, false, false, false, false, ])
+TCMS.oTD.push([3000517, "", false, false, false, false, false, "12%2f25%2f2009%2012%3a00%3a00%20AM", ["12%2f25%2f2009", "12%3a00%20AM"], "", "08%3a00%20AM", 8, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "HOL", "", "", "", "", "", "", "C", "W", 0, "", 0, false, false, false, false, false, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f25%2f2009%2012%3a00%3a00%20AM", ["12%2f25%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f26%2f2009%2012%3a00%3a00%20AM", ["12%2f26%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f26%2f2009%2012%3a00%3a00%20AM", ["12%2f26%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f27%2f2009%2012%3a00%3a00%20AM", ["12%2f27%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, true, false, ])
+TCMS.oTD.push([0, "", false, false, false, false, false, "12%2f27%2f2009%2012%3a00%3a00%20AM", ["12%2f27%2f2009", ""], "", "", 0, "", "302500", "1000002506", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", 2, "", 0, false, false, true, true, false, false, ])</script>
 
 
 <script languagage="javascript">
@@ -386,7 +386,7 @@ function doZoomPostBack()
 var objAboutWindow;
 function OpenAboutWindow()
 {
-objAboutWindow = window.open('/ezLaborManagerNet/Misc/About.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752&fID=e','ezLaborManagerOptions','width=550,height=575,resizable=1,status=1,scrollbars=1');
+objAboutWindow = window.open('/ezLaborManagerNet/Misc/About.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4&fID=e','ezLaborManagerOptions','width=550,height=575,resizable=1,status=1,scrollbars=1');
 objAboutWindow.focus();
 return void(0);
 }
@@ -405,13 +405,13 @@ var windowLocation = '';
 var windowParams = '';
 if(wndw == 'p')
 {
-     windowLocation = '/ezLaborManagerNet/Misc/Privacy.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752';
+     windowLocation = '/ezLaborManagerNet/Misc/Privacy.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4';
      windowName = 'ADPPrivacy';
      windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
 }
 else
 {
-     windowLocation = '/ezLaborManagerNet/Misc/Legal.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752';
+     windowLocation = '/ezLaborManagerNet/Misc/Legal.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4';
      windowName = 'ADPLegal';
      windowParams = 'width=650,height=700,resizable=1,status=1,scrollbars=1';
 }
@@ -428,7 +428,7 @@ return void(0);
 					function OpenSuggestionWindow()
 					{
 						var winParam = "width=750,height=700,resizable=1,status=1,scrollbars=1";
-						var objWin = window.open("/ezLaborManagerNet/Misc/Suggestions.aspx?lng=en-US&sID=26d024614a6946b88d6d1bf5c5b87752&fID=e", "suggestion", winParam);
+						var objWin = window.open("/ezLaborManagerNet/Misc/Suggestions.aspx?lng=en-US&sID=93e9a56d648c4eb2b068e1e0141caaa4&fID=e", "suggestion", winParam);
 						objWin.focus();
 					}
 					//-->
@@ -465,7 +465,7 @@ return void(0);
 										</tr>
 										<tr>
 											<td class="WelcomeText" vAlign="top" noWrap><span id="Banner1_lblWelcome" key="lbl_Welcome">Welcome</span>&nbsp;<span class="NameText">
-													<span id="Banner1_lblName">Ryan W&nbsp;Davis</span></span></td>
+													<span id="Banner1_lblName">Aaron J&nbsp;Patterson</span></span></td>
 										</tr>
 										<tr>
 											<td><IMG height="3" src="/ezLaborManagerNet/images/spacer.gif"></td>
@@ -483,7 +483,7 @@ return void(0);
 									<table cellSpacing="0" cellPadding="0" border="0">
 										<tr>
 											<TD style="PADDING-RIGHT:9px">
-												<img id="Banner1_imgReports" key="Reports.gif" title="Reports" onclick="OpenReportsWindow();" src="/ezLaborManagerNet/images/en-US/Reports.gif" alt="" border="0" style="cursor:pointer;" />&nbsp;
+												&nbsp;
 											</TD>
 											<td>
 												<img id="Banner1_imgOptions" key="Options.gif" title="Options" onclick="OpenOptionsWindow();" src="/ezLaborManagerNet/images/en-US/Options.gif" alt="" border="0" style="cursor:pointer;" />&nbsp;
@@ -514,8 +514,7 @@ return void(0);
 									<table cellSpacing="0" cellPadding="0" border="0">
 										<tr>
 											<TD vAlign="middle" align="right"><select name="Banner1:ddlServices" id="Banner1_ddlServices" class="ServicesDropdown" onchange="if(!anyChanges()){this.selectedIndex=2; return false;} else {document.location=this.options[this.selectedIndex].value;}">
-	<option value="/ezLaborManagerNet/SupervisorServices/SupervisorServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Supervisor Services</option>
-	<option selected="selected" value="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Employee Services</option>
+	<option selected="selected" value="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4">Employee Services</option>
 
 </select></TD>
 											<td>&nbsp;</td>
@@ -536,7 +535,7 @@ return void(0);
 				<tr>
 					<td><table border="0" cellpadding="0" cellspacing="0" width="100%">
 	<tr>
-		<td class="ActionButtonsTabSelectedRed" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_0"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/1st_left_selected_tabRed.gif" /><span class="TabLabel">Home</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab_selected_tabRed.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyLabor.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_1"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Labor</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/Attendance/AttendanceNotifications.aspx?sID=26d024614a6946b88d6d1bf5c5b87752&amp;sDt=2009-12-17&amp;eDt=2009-12-24" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_2"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Attendance</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyBenefits.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_3"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Benefits</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyInformation.aspx?sID=26d024614a6946b88d6d1bf5c5b87752" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_4"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Information</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td background="/ezLaborManagerNet/images/tabs/GreyBlackLine.gif" width="99%"></td>
+		<td class="ActionButtonsTabSelectedRed" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_0"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/1st_left_selected_tabRed.gif" /><span class="TabLabel">Home</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab_selected_tabRed.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyLabor.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_1"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Labor</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/Attendance/AttendanceNotifications.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4&amp;sDt=2009-12-21&amp;eDt=2009-12-28" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_2"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Attendance</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyBenefits.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_3"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Benefits</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td class="ActionButtonsTabTile" nowrap="true"><a class="TabUnselectedLink" href="/ezLaborManagerNet/EmployeeServices/MyInformation.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4" onClick="if(!anyChanges()) {return false;}" id="Banner1_tabControl_4"><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/left_tab.gif" /><span class="TabLabel">My Information</span><img border="0" width="26" src="/ezLaborManagerNet/images/tabs/right_tab.gif" /></a></td><td background="/ezLaborManagerNet/images/tabs/GreyBlackLine.gif" width="99%"></td>
 	</tr>
 </table><span id="Banner1_tabControl" key="tab_EmployeeServices"></span></td>
 				</tr>
@@ -563,9 +562,9 @@ return void(0);
 																		<td noWrap><table cellpadding="1" cellspacing="1">
 	<tr>
 		<td><select id="ctrlDtRangeSelector_SelectionItem" name="ctrlDtRangeSelector:SelectionItem" onchange="ADPDateRangeSelector_selectionChanged('ctrlDtRangeSelector','ctrlDtRangeSelector_SelectionItem','11');">
-			<option value="5">
+			<option value="5" selected="">
 				Current Pay Period
-			</option><option value="8" selected="">
+			</option><option value="8">
 				Next Pay Period
 			</option><option value="18">
 				Previous Pay Period
@@ -589,9 +588,9 @@ return void(0);
 				User-Defined Date Range
 			</option>
 		</select></td><td><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
-			<span class="NW"><input size="11" maxlength="11" type="text" value="12/28/2009" id="ctrlDtRangeSelector_BeginDate" name="ctrlDtRangeSelector:BeginDate" onblur="return fixDate(this);" onchange="return ADPDateRangeSelector_setSelectedIndex('ctrlDtRangeSelector','ctrlDtRangeSelector_SelectionItem','11');" /><span class="HiddenItem" id="DisableImgctrlDtRangeSelector:BeginDate"><img src="/ezLaborManagerNet/images/CalendarDisabled.gif" border="0" align="absbottom" style="margin-left:4px; margin-bottom:1px;" /></span><span class="VisibleItem" id="EnableImgctrlDtRangeSelector:BeginDate"><a tabindex="-1" href="javascript: openCal(document.forms[0].ctrlDtRangeSelector_BeginDate, false);"><img src="/ezLaborManagerNet/images/Calendar.gif" border="0" align="absbottom" tabindex="0" title="Select Date" style="margin-left:4px; margin-bottom:1px;" /></a></span></span>
+			<span class="NW"><input size="11" maxlength="11" type="text" value="12/14/2009" id="ctrlDtRangeSelector_BeginDate" name="ctrlDtRangeSelector:BeginDate" onblur="return fixDate(this);" onchange="return ADPDateRangeSelector_setSelectedIndex('ctrlDtRangeSelector','ctrlDtRangeSelector_SelectionItem','11');" /><span class="HiddenItem" id="DisableImgctrlDtRangeSelector:BeginDate"><img src="/ezLaborManagerNet/images/CalendarDisabled.gif" border="0" align="absbottom" style="margin-left:4px; margin-bottom:1px;" /></span><span class="VisibleItem" id="EnableImgctrlDtRangeSelector:BeginDate"><a tabindex="-1" href="javascript: openCal(document.forms[0].ctrlDtRangeSelector_BeginDate, false);"><img src="/ezLaborManagerNet/images/Calendar.gif" border="0" align="absbottom" tabindex="0" title="Select Date" style="margin-left:4px; margin-bottom:1px;" /></a></span></span>
 		</td></tr></table></td><td>-</td><td><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
-			<span class="NW"><input size="11" maxlength="11" type="text" value="01/10/2010" id="ctrlDtRangeSelector_EndDate" name="ctrlDtRangeSelector:EndDate" onblur="return fixDate(this);" onchange="return ADPDateRangeSelector_setSelectedIndex('ctrlDtRangeSelector','ctrlDtRangeSelector_SelectionItem','11');" /><span class="HiddenItem" id="DisableImgctrlDtRangeSelector:EndDate"><img src="/ezLaborManagerNet/images/CalendarDisabled.gif" border="0" align="absbottom" style="margin-left:4px; margin-bottom:1px;" /></span><span class="VisibleItem" id="EnableImgctrlDtRangeSelector:EndDate"><a tabindex="-1" href="javascript: openCal(document.forms[0].ctrlDtRangeSelector_EndDate, false);"><img src="/ezLaborManagerNet/images/Calendar.gif" border="0" align="absbottom" tabindex="0" title="Select Date" style="margin-left:4px; margin-bottom:1px;" /></a></span></span>
+			<span class="NW"><input size="11" maxlength="11" type="text" value="12/27/2009" id="ctrlDtRangeSelector_EndDate" name="ctrlDtRangeSelector:EndDate" onblur="return fixDate(this);" onchange="return ADPDateRangeSelector_setSelectedIndex('ctrlDtRangeSelector','ctrlDtRangeSelector_SelectionItem','11');" /><span class="HiddenItem" id="DisableImgctrlDtRangeSelector:EndDate"><img src="/ezLaborManagerNet/images/CalendarDisabled.gif" border="0" align="absbottom" style="margin-left:4px; margin-bottom:1px;" /></span><span class="VisibleItem" id="EnableImgctrlDtRangeSelector:EndDate"><a tabindex="-1" href="javascript: openCal(document.forms[0].ctrlDtRangeSelector_EndDate, false);"><img src="/ezLaborManagerNet/images/Calendar.gif" border="0" align="absbottom" tabindex="0" title="Select Date" style="margin-left:4px; margin-bottom:1px;" /></a></span></span>
 		</td></tr></table></td>
 	</tr>
 </table></td>
@@ -613,7 +612,7 @@ return void(0);
 												<!-- Section Divider End -->
 												<table width="100%" cellpadding="0" cellspacing="0">
 	<tr>
-		<td class="Breadcrumbs"><span class="Breadcrumbs-Label">You are here:&nbsp;</span><a onclick="return anyChanges()" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Home</a>&nbsp;&gt;&nbsp;Employee Time Sheet</td>
+		<td class="Breadcrumbs"><span class="Breadcrumbs-Label">You are here:&nbsp;</span><a onclick="return anyChanges()" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4">Home</a>&nbsp;&gt;&nbsp;Employee Time Sheet</td>
 	</tr>
 </table><table class="SectionDivider" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 1px; margin-bottom: 1px;"><tr><td>
 	&nbsp;
@@ -733,7 +732,7 @@ function colorNotesRow(rw)
 		<td></td>
 	</tr>
 	<tr>
-		<td></td>
+		<td><div class="InfoText">Pay period is locked/pending and user does not have closure access.  All time pairs with a pay date in the current pay period have been disabled.</div></td>
 	</tr>
 	<tr>
 		<td>
@@ -824,7 +823,7 @@ processNewDates();
 									</table>
 									<table width="100%" cellpadding="0" cellspacing="0">
 	<tr>
-		<td class="Breadcrumbs"><span class="Breadcrumbs-Label">Back to:&nbsp;</span><a onclick="return anyChanges()" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=26d024614a6946b88d6d1bf5c5b87752">Home</a></td>
+		<td class="Breadcrumbs"><span class="Breadcrumbs-Label">Back to:&nbsp;</span><a onclick="return anyChanges()" href="/ezLaborManagerNet/EmployeeServices/EmployeeServicesStart.aspx?sID=93e9a56d648c4eb2b068e1e0141caaa4">Home</a></td>
 	</tr>
 </table><table class="SectionDivider" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top: 1px; margin-bottom: 1px;"><tr><td>
 	&nbsp;
@@ -837,7 +836,7 @@ processNewDates();
 					<td height="25">
 <table id="Table22" height="36" cellSpacing="0" cellPadding="0" width="100%" border="0">
 	<tr class="Footer-AppInfoRow" height="16">
-		<td align="center" nowrap colspan="2">12/24/2009 04:25:03 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{' ezlmportal4.adp.com - ezlmportal4.adp.com DPID - sA&lt;yuCnwIA*</td>
+		<td align="center" nowrap colspan="2">12/28/2009 06:33:47 PM&nbsp;v11.016.005.04 - xb&lt;;9g:9e,[[{} ezlmportal4.adp.com - ezlmportal4.adp.com DPID - sA&lt;yuCnwIA&amp;</td>
 	</tr>
 	<tr height="20">
 		<td class="FooterText" noWrap width="99%">Copyright Â©2000-2009 Automatic Data Processing, Inc. All Rights Reserved.&nbsp;</td>
