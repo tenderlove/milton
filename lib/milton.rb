@@ -69,11 +69,6 @@ the current week with eight hours/day.
         options['view'] = true  # For your safety, you can only view months
         options['month'] = value || Date.today
       end
-
-      opt.on('--fuck-the-man',
-             'Do not include lunch in your timesheet') do |value|
-        options['rows_per_day'] = 1
-      end
     end
 
     opts.parse! argv
@@ -94,7 +89,8 @@ the current week with eight hours/day.
   end
 
   def initialize &block
-    @agent = WWW::Mechanize.new
+    @agent = Mechanize.new
+    @agent.user_agent_alias = 'Mac FireFox'
     @page = nil
     @username = nil
     yield self if block_given?
@@ -174,7 +170,8 @@ the current week with eight hours/day.
     end
 
     unless config['view'] then
-      self.rows_per_day = config['rows_per_day'] || 2
+      self.rows_per_day = 2
+      fill_timesheet
       fill_timesheet
     end
 
@@ -213,17 +210,18 @@ the current week with eight hours/day.
         "#{date} 12:00:00 AM",
         start, '',
         finish,
-        '8', '',
+        '4', '',
         department,
         employee_id,
         '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-        '', '', '', 'EDIT', '', '', '', '', '2', '', '0', 'False'
+        '', '', '', '', '', '', '', '', '2', '', '0', 'False'
       ]
 
       # This reset is for the timestamp calculations.
       last_date = date
     end
 
+    #@agent.log = Logger.new($stderr)
     @page = @page.form('Form1') { |form|
       ## FIXME: Fill out this form
       form['hdnRETURNDATA'] = rows.map { |row|
@@ -232,7 +230,7 @@ the current week with eight hours/day.
         }.join('~~')
       }.join('~||~')
 
-      form['__EVENTTARGET'] = 'TG:btnSubmitTop'
+      form['__EVENTTARGET'] = 'TG$btnSubmitTop'
       form['__PageDirty']   = 'True'
     }.submit
   end
@@ -325,7 +323,7 @@ the current week with eight hours/day.
   def select_range start, finish
     @page = @page.form('Form1') { |form|
       form['__EVENTTARGET'] = 'ctrlDtRangeSelector'
-      form['ctrlDtRangeSelector:SelectionItem'] = '3' # Set to this week
+      form['ctrlDtRangeSelector:SelectionItem'] = '17' # Set to this week
       form['ctrlDtRangeSelector:BeginDate']     = start.strftime('%m/%d/%Y')
       form['ctrlDtRangeSelector:EndDate']       = finish.strftime('%m/%d/%Y')
       form['__PageDirty']   = 'False'
@@ -350,17 +348,12 @@ the current week with eight hours/day.
   # Returns the starting and ending EZLabor-style timestamps for the
   # current date row in the timesheet.
   def starting_and_ending_timestamp(date, last_date)
-    if @rows_per_day == 2
-      if last_date == date
-        start_timestamp = "#{date} 08:30 AM"
-        end_timestamp = '12:00 PM'
-      else
-        start_timestamp = "#{date} 12:30 PM"
-        end_timestamp = '05:00 PM'
-      end
+    if last_date == date
+      start_timestamp = "#{date} 01:00 PM"
+      end_timestamp = '05:00 PM'
     else
       start_timestamp = "#{date} 08:30 AM"
-      end_timestamp = '04:30 PM'
+      end_timestamp = '12:30 PM'
     end
     return start_timestamp, end_timestamp
   end
